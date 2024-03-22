@@ -112,7 +112,7 @@ for i in lista:
     elemento = driver.find_element(By.XPATH, '//*[@id="global-search"]')
     
     elemento.send_keys(i)
-    sleep(10)
+    sleep(30)
 
     # Encontre o índice da linha que contém o valor de 'i' na coluna 'ticket'
     index = df[df['ticket'] == i].index[0]
@@ -168,6 +168,8 @@ for i in lista:
 
         # Seleciona a opção pelo valor
         select.select_by_value(str(prioridade))
+        
+       
 
         # prioridade += 1
 
@@ -179,9 +181,7 @@ for i in lista:
     # Crie uma coluna chamada 'Município' e atribua a ela a primeira ocorrência  entre "[]" da coluna 'Título'
     df['Município'] = df['Título'].str.extract(r'\[(.*?)\]')
        
-    # Se Proprietário for = a '-'  preencha com o valor de Proprietário da linha anterior
-    df['Proprietário'] = df['Proprietário'].replace('-', method='ffill')
-
+            
 # Remova as linha em que Ticket é igual a NaN
 df = df.dropna(subset=['ticket'])
 
@@ -294,6 +294,8 @@ for i in range(2, 52):
     
 # Salvar o arquivo Excel
 wb.save(r'C:\Users\Regina Casoti\Documents\Vivver\priorizadas_semana.xlsx')
+wb.save(r'C:\workspace\Tickets\priorizadas_semana.xlsx')
+
 
 # Esse trecho abre a planilha de Tickts e insere a quantidade de dias que um determinado Ticket foi priorizado buscando essa informação na planilha Priorizados_Semana
 wb = load_workbook(r'C:\Users\Regina Casoti\Documents\Vivver\Tickets_Vivver.xlsx')
@@ -349,16 +351,14 @@ sheet = wb['Todos']
 # Obter o número da última linha com dados
 last_row = sheet.max_row
 
-# Escrever a fórmula nas células I2 até a última linha e J2 até a última linha
-for i in range(2, last_row + 1):
-    sheet[f'I{i}'] = f'=IFERROR(VLOOKUP(B{i}, com_prioridade!$A$1:$H$11, 4, FALSE), "-")'
-    sheet[f'J{i}'] = f'=IFERROR(VLOOKUP(B{i}, contagem_tickets_agrupado!$A$1:$B$30, 2, FALSE), "")'
-
 # Inserir a fórmula nas colunas 'FeedBack' (coluna 'M'), 'Pendentes' (coluna 'L') e 'Fechado' (coluna 'K') da linha 8 até a última linha
 for i in range(8, last_row + 1):
+    sheet[f'I{i}'] = f'=IFERROR(VLOOKUP(B{i}, com_prioridade!$A$1:$H$11, 3, FALSE), "-")'
+    sheet[f'J{i}'] = f'=IFERROR(VLOOKUP(B{i}, contagem_tickets_agrupado!$A$1:$B$30, 2, FALSE), "")'
     sheet[f'M{i}'] = f'=IFERROR(VLOOKUP(B{i},Retornados!B$1:H$9,3,FALSE), "")'
     sheet[f'L{i}'] = f'=IFERROR(VLOOKUP(B{i},Pendentes!B$1:G$4029, 6, FALSE), "")'
     sheet[f'K{i}'] = f'=IFERROR(VLOOKUP(B{i},Fechados!B$1:L$4001, 3, FALSE), "")'
 
 # Salvar o arquivo Excel
 wb.save(r'C:\Users\Regina Casoti\Documents\Vivver\Tickets_Vivver.xlsx')
+wb.save(r'C:\workspace\Tickets\Tickets_Vivver.xlsx')

@@ -62,6 +62,8 @@ sleep(3)
 elemento = driver.find_element(By.XPATH, '//*[@id="content_permanent_TicketOverview"]/div[3]')
 html_interior = elemento.get_attribute('innerHTML')
 
+pdb.set_trace()
+
 # Criar um DataFrame com as linhas e colunas da tabela
 df = pd.read_html(html_interior, index_col=0)
 
