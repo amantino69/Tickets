@@ -16,7 +16,7 @@ from pandas import read_html, concat
 from datetime import datetime, timedelta
 from fuzzywuzzy import process
 from io import StringIO
-
+import numpy as np
 
 
 
@@ -76,7 +76,7 @@ for i in range(len(lista)):
     lista[i] = str(lista[i]).replace('.0', '')
 
 
-for i in lista:
+for i in lista[:1]:
     sleep(5)
     
     try:
@@ -102,7 +102,7 @@ for i in lista:
     elemento = driver.find_element(By.XPATH, '//*[@id="global-search"]')
     
     elemento.send_keys(i)
-    sleep(40)
+    sleep(90)
 
     # Localizar o elemento
     elemento = driver.find_element(By.XPATH, f'//div[@class="global-search-menu"]//span[contains(text(), "{i}")]')
@@ -123,30 +123,46 @@ for i in lista:
     ultimo_comentario_vivver = elementos_vivver[-1].text if elementos_vivver else None
 
     # Encontre todos os elementos com a classe 'ticket-article-item agent' e pegue o último
-    elementos_cresce = driver.find_elements(By.CSS_SELECTOR, '.ticket-article-item.agent .richtext-content')
-    ultimo_comentario_cresce = elementos_cresce[-1].text if elementos_cresce else None
+    elementos_crescer = driver.find_elements(By.CSS_SELECTOR, '.ticket-article-item.agent .richtext-content')
+    ultimo_comentario_crescer = elementos_crescer[-1].text if elementos_crescer else None
     
     
     # print do último comentário agent e customer e system
     print(f'Último comentário do sistema: {ultimo_comentario_sistema}')
     print(f'Último comentário do cliente: {ultimo_comentario_vivver}')
-    print(f'Último comentário do agente: {ultimo_comentario_cresce}')
+    print(f'Último comentário do agente: {ultimo_comentario_crescer}')
     
     
+# Acessando o valor do atributo 'class' do último elemento da lista 'elementos_sistema'
+class_sistema = elementos_sistema[-1].get_attribute('class') if elementos_sistema else None
 
-    
-   # Abrir a planilha Excel r'C:\Users\Regina Casoti\Documents\Vivver\Tickets_Vivver.xlsx e criar 3 colunas: 'Último comentário do sistema', 'Último comentário do cliente' e 'Último comentário do agente' e salvar os respectivos comentários.  
-    df.loc[df['Ticket'] == i, 'Último comentário do sistema'] = ultimo_comentario_sistema
-    df.loc[df['Ticket'] == i, 'Último comentário do cliente'] = ultimo_comentario_vivver
-    df.loc[df['Ticket'] == i, 'Último comentário do agente'] = ultimo_comentario_cresce
-    
-    
-    ##################################################
-        
-        
-              
-    # Salvar a planilha
-    df.to_excel(r'C:\Users\Regina Casoti\Documents\Vivver\Tickets_Vivver.xlsx', index=False)
+# Acessando o valor do atributo 'class' do último elemento da lista 'elementos_vivver'
+class_vivver = elementos_vivver[-1].get_attribute('class') if elementos_vivver else None
 
+# Acessando o valor do atributo 'class' do último elemento da lista 'elementos_crescer'
+class_crescer = elementos_crescer[-1].get_attribute('class') if elementos_crescer else None
+
+print(f'Classe do último comentário do sistema: {class_sistema}')
+print(f'Classe do último comentário do cliente: {class_vivver}')
+print(f'Classe do último comentário do agente: {class_crescer}')
     
+# Acessando o valor do atributo 'title' do último elemento da lista 'elementos_vivver'
+title_vivver = elementos_vivver[-1].get_attribute('title') if elementos_vivver else None
+
+# Acessando o valor do atributo 'title' do último elemento da lista 'elementos_crescer'
+title_crescer = elementos_crescer[-1].get_attribute('title') if elementos_crescer else None
+
+# Acessando o valor do atributo 'title' do último elemento da lista 'elementos_sistema'
+title_sistema = elementos_sistema[-1].get_attribute('title') if elementos_sistema else None
+
+print(f'Título do último comentário do sistema: {title_sistema}')
+print(f'Título do último comentário do cliente: {title_vivver}')
+print(f'Título do último comentário do agente: {title_crescer}')
+
+
+
+
+# Salve o DataFrame
+df.to_excel(r'C:\Users\Regina Casoti\Documents\Vivver\Tickets_Vivver_temp.xlsx', index=False)
+
   

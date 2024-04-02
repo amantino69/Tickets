@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0 auto; width: 300px; }
+        form { display: flex; flex-direction: column; }
+        input { margin-bottom: 10px; }
+        button { cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <form method="POST">
+        <input type="number" name="a" required placeholder="Primeiro número">
+        <input type="number" name="b" required placeholder="Segundo número">
+        <select name="operation" required>
+            <option value="">Selecione a operação</option>
+            <option value="add">Adição</option>
+            <option value="subtract">Subtração</option>
+            <option value="multiply">Multiplicação</option>
+            <option value="divide">Divisão</option>
+        </select>
+        <button type="submit">Calcular</button>
+    </form>
+    {% if result is not none %}
+    <p>Resultado: {{ result }}</p>
+    {% endif %}
+</body>
+</html>

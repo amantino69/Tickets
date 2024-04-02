@@ -120,4 +120,4 @@ df_final['Status'] = 'Pendente'
 
 
 # Salvar o DataFrame final para um arquivo Excel com o número da iteração no nome do arquivo
-df_final.to_excel(r'C:\Users\Regina Casoti\Documents\Vivver\Tickets_Pendentes.xlsx', index=False)
+df_final.to_excel(r'planilhas\Tickets_Pendentes.xlsx', index=False)

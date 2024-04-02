@@ -1,0 +1,3288 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://ticket.crescer.net/#ticket/zoom/8413 -->
+<html lang="pt" dir="ltr" data-theme="light"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Crescer Tecnologia - #108346 - [Nova Lima-MG][Imunização]  - Parametrização de imunos/estrategia.</title>
+  <link rel="apple-touch-icon" href="https://ticket.crescer.net/apple-touch-icon.png">
+  <link rel="stylesheet" media="all" href="./Crescer Tecnologia - #108346 - [Nova Lima-MG][Imunização] - Parametrização de imunos_estrategia._files/application-f87ee7ab9c721f4eb1ceae4fccdcac18719616a6abfbca2733e78a7b9af2157c.css">
+  <link rel="stylesheet" media="print" href="./Crescer Tecnologia - #108346 - [Nova Lima-MG][Imunização] - Parametrização de imunos_estrategia._files/application-print-03b49985a4830cb5379c75dde562b82d9cb2d7eee523c566dc793e7be07a85e0.css">
+  <script nonce="">
+//<![CDATA[
+    if(window.MSInputMethodContext && document.documentMode){
+      var polyfillScriptTag = document.createElement('script');
+      polyfillScriptTag.setAttribute('src', '/assets/ie11CustomProperties.min-eb19b438c0f5d2010c250595ef6b0b161dacf892c8a6f772dc121e99fc020a2c.js');
+      polyfillScriptTag.setAttribute('nonce', '/bn3lHwzXypMKSlSb/XRnw==');
+      document.head.appendChild(polyfillScriptTag);
+    }
+
+    try {
+      if(window.matchMedia('(prefers-color-scheme: dark)').matches && localStorage.getItem('theme') != 'light' && !window.location.href.includes('/tests_') ){
+        document.documentElement.dataset.theme = 'dark';
+      }
+    } catch (e) { };
+
+//]]>
+</script>    <script src="./Crescer Tecnologia - #108346 - [Nova Lima-MG][Imunização] - Parametrização de imunos_estrategia._files/application-6dff7b70db9c4ff5bcd2bb2c810dfbe5dc398b6221a04dbb50fb82beaed9b9a5.js.download" nonce="" defer="defer"></script>
+
+  <script src="./Crescer Tecnologia - #108346 - [Nova Lima-MG][Imunização] - Parametrização de imunos_estrategia._files/form.js.download" nonce="" defer="defer" id="zammad_form_script"></script>
+
+
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="_gJ1E1_yEOAELJey0j9PDzBh__ZJpgZfe880TMmS8tPeUGehHOHyMU2R4WS-7pCyARVKiF4L1fvMTskass91ig">
+</head>
+<body>
+
+  <!-- svgstore fallback -->
+<script nonce="">
+//<![CDATA[
+  /*
+    detect if browser is
+    - Chrome 14-20
+    - Android Browser 4.1+
+    - iOS 6-7
+    - Safari 6
+    - Edge 12
+    - IE 9-11
+  */
+  window.svgPolyfill = /\bEdge\/12\b|\bTrident\/[567]\b|\bVersion\/7.0 Safari\b/.test(navigator.userAgent) || (navigator.userAgent.match(/AppleWebKit\/(\d+)/) || [])[1] < 537;
+
+  (function (doc) {
+    if(!svgPolyfill)
+      return
+
+    var scripts = doc.getElementsByTagName('script')
+    var script = scripts[scripts.length - 1]
+    var xhr = new XMLHttpRequest()
+    xhr.onload = function () {
+      var div = doc.createElement('div')
+      div.innerHTML = this.responseText
+      div.style.cssText = 'position: absolute; clip: rect(0, 0, 0, 0); z-index: -1;'
+      script.parentNode.insertBefore(div, script)
+    }
+    xhr.open('get', 'assets/images/icons.svg', true)
+    xhr.send()
+  })(document)
+
+//]]>
+</script><div id="app"><div id="navigation" class="navigation vertical is-not-collapsed">
+  <div class="search">
+    <form class="search-holder">
+      <input id="global-search" type="search" autocomplete="off">
+      <svg class="icon icon-magnifier "><use xlink:href="assets/images/icons.svg#icon-magnifier"></use></svg>
+      <div class="search-loader"><svg class="icon icon-spinner-small "><use xlink:href="assets/images/icons.svg#icon-spinner-small"></use></svg></div>
+      <div class="empty-search js-emptySearch">
+        <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>
+      </div>
+    </form>
+    <div class="logo js-toggleNotifications">
+      <svg class="icon icon-logo "><use xlink:href="assets/images/icons.svg#icon-logo"></use></svg>
+      <div class="activity-counter js-notificationsCounter"></div>
+    </div>
+    <div class="global-search-menu">
+      <a href="https://ticket.crescer.net/#search" class="global-search-detail-link nav-tab nav-tab--search js-details-link">
+        <div class="nav-tab-icon">
+          <svg class="icon icon-searchdetail "><use xlink:href="assets/images/icons.svg#icon-searchdetail"></use></svg>
+        </div>
+        <div class="nav-tab-name flex u-textTruncate">
+          Mostrar Detalhes da Pesquisa
+          <svg class="icon icon-long-arrow-right "><use xlink:href="assets/images/icons.svg#icon-long-arrow-right"></use></svg>
+        </div>
+      </a>
+      <ul class="global-search-result js-global-search-result" role="menu"><li class="global-search-detail-no-result alert alert--warning horizontal" role="alert">
+  <svg class="icon icon-mood-sad "><use xlink:href="assets/images/icons.svg#icon-mood-sad"></use></svg>
+  <span>Não há correspondência para sua pesquisa.</span>
+</li>
+</ul>
+    </div>
+  </div>
+  <div class="menu js-menu">
+  
+  <a class="menu-item js-overviewsMenuItem" href="https://ticket.crescer.net/#ticket/view" data-key="TicketOverview">
+    <svg class="icon icon-overviews menu-item-icon"><use xlink:href="assets/images/icons.svg#icon-overviews"></use></svg>
+    <span class="menu-item-name">
+      Visão Geral
+    </span>
+    
+    
+
+    
+  </a>
+  
+
+  
+  <a class="menu-item js-knowledge-baseMenuItem  " href="https://ticket.crescer.net/#knowledge_base" data-key="KnowledgeBase">
+    <svg class="icon icon-knowledge-base menu-item-icon"><use xlink:href="assets/images/icons.svg#icon-knowledge-base"></use></svg>
+    <span class="menu-item-name">
+      Base de Conhecimento
+    </span>
+    
+    
+
+    
+  </a>
+  
+
+</div>
+  <div class="tasks tasks-navigation ui-sortable"><a href="https://ticket.crescer.net/#ticket/zoom/7164" title="#107099 - [Sorocaba-SP] – Laboratório – Integração" class="nav-tab task js-item js-locationVerify task-state-open is-modified" data-key="Ticket-7164">
+  <div class="nav-tab-icon" title="aberto">
+    
+      
+        <svg class="icon icon-small-dot icon-status-modified-inner-circle icon-task-state open"><use xlink:href="assets/images/icons.svg#icon-small-dot"></use></svg>
+        <svg class="icon icon-status-modified-outer-circle icon-task-state open"><use xlink:href="assets/images/icons.svg#icon-status-modified-outer-circle"></use></svg>
+      
+    
+  </div>
+  <div class="nav-tab-name u-textTruncate flex">[Sorocaba-SP] – Laboratório – Integração</div>
+  <div class="nav-tab-close js-close" title="fechado">
+    <div class="nav-tab-close-inner">
+      <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>
+    </div>
+  </div>
+</a><a href="https://ticket.crescer.net/#ticket/zoom/7137" title="#107072 - [Contagem/MG][Almoxarifado][Prescrição] Município pede a criação de menu ou ícone para prescrição livre" class="nav-tab task js-item js-locationVerify task-state-open" data-key="Ticket-7137">
+  <div class="nav-tab-icon" title="aberto">
+    
+      
+        <svg class="icon icon-task-state open"><use xlink:href="assets/images/icons.svg#icon-task-state"></use></svg>
+      
+    
+  </div>
+  <div class="nav-tab-name u-textTruncate flex">[Contagem/MG][Almoxarifado][Prescrição] Município pede a criação de menu ou ícone para prescrição livre</div>
+  <div class="nav-tab-close js-close" title="fechado">
+    <div class="nav-tab-close-inner">
+      <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>
+    </div>
+  </div>
+</a><a href="https://ticket.crescer.net/#ticket/zoom/7805" title="#107739 - [Nova lima][Integração RNDS] - Erro ao enviar registros de vacinação." class="nav-tab task js-item js-locationVerify task-state-open" data-key="Ticket-7805">
+  <div class="nav-tab-icon" title="aberto">
+    
+      
+        <svg class="icon icon-task-state open"><use xlink:href="assets/images/icons.svg#icon-task-state"></use></svg>
+      
+    
+  </div>
+  <div class="nav-tab-name u-textTruncate flex">[Nova lima][Integração RNDS] - Erro ao enviar registros de vacinação.</div>
+  <div class="nav-tab-close js-close" title="fechado">
+    <div class="nav-tab-close-inner">
+      <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>
+    </div>
+  </div>
+</a><a href="https://ticket.crescer.net/#ticket/zoom/8250" title="#108183 - [Governador Valadares] [Internação] [Censo hospitalar] - Inconsistências no censo" class="nav-tab task js-item js-locationVerify task-state-open" data-key="Ticket-8250">
+  <div class="nav-tab-icon" title="aberto">
+    
+      
+        <svg class="icon icon-task-state open"><use xlink:href="assets/images/icons.svg#icon-task-state"></use></svg>
+      
+    
+  </div>
+  <div class="nav-tab-name u-textTruncate flex">[Governador Valadares] [Internação] [Censo hospitalar] - Inconsistências no censo</div>
+  <div class="nav-tab-close js-close" title="fechado">
+    <div class="nav-tab-close-inner">
+      <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>
+    </div>
+  </div>
+</a><a href="https://ticket.crescer.net/#ticket/zoom/8202" title="#108135 - [Volta Redonda-RJ] [Almoxarifado] Incidência no preço medio do produto" class="nav-tab task js-item js-locationVerify task-state-pending is-modified" data-key="Ticket-8202">
+  <div class="nav-tab-icon" title="Feedback">
+    
+      
+        <svg class="icon icon-small-dot icon-status-modified-inner-circle icon-task-state pending"><use xlink:href="assets/images/icons.svg#icon-small-dot"></use></svg>
+        <svg class="icon icon-status-modified-outer-circle icon-task-state pending"><use xlink:href="assets/images/icons.svg#icon-status-modified-outer-circle"></use></svg>
+      
+    
+  </div>
+  <div class="nav-tab-name u-textTruncate flex">[Volta Redonda-RJ] [Almoxarifado] Incidência no preço medio do produto</div>
+  <div class="nav-tab-close js-close" title="fechado">
+    <div class="nav-tab-close-inner">
+      <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>
+    </div>
+  </div>
+</a><a href="https://ticket.crescer.net/#ticket/zoom/6299" title="#106245 - [Volta Redonda - RJ][Almoxarifado/Hospital] Exibir somente produtos em estoque na prescrição interna" class="nav-tab task js-item js-locationVerify task-state-open is-modified" data-key="Ticket-6299">
+  <div class="nav-tab-icon" title="aberto">
+    
+      
+        <svg class="icon icon-small-dot icon-status-modified-inner-circle icon-task-state open"><use xlink:href="assets/images/icons.svg#icon-small-dot"></use></svg>
+        <svg class="icon icon-status-modified-outer-circle icon-task-state open"><use xlink:href="assets/images/icons.svg#icon-status-modified-outer-circle"></use></svg>
+      
+    
+  </div>
+  <div class="nav-tab-name u-textTruncate flex">[Volta Redonda - RJ][Almoxarifado/Hospital] Exibir somente produtos em estoque na prescrição interna</div>
+  <div class="nav-tab-close js-close" title="fechado">
+    <div class="nav-tab-close-inner">
+      <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>
+    </div>
+  </div>
+</a><a href="https://ticket.crescer.net/#ticket/zoom/6817" title="#106756 - [Volta Redonda - RJ]][Hospital] Criação de um filtro na tela de checagem, para ordenação por Horário" class="nav-tab task js-item js-locationVerify task-state-open" data-key="Ticket-6817">
+  <div class="nav-tab-icon" title="novo">
+    
+      
+        <svg class="icon icon-task-state open"><use xlink:href="assets/images/icons.svg#icon-task-state"></use></svg>
+      
+    
+  </div>
+  <div class="nav-tab-name u-textTruncate flex">[Volta Redonda - RJ]][Hospital] Criação de um filtro na tela de checagem, para ordenação por Horário</div>
+  <div class="nav-tab-close js-close" title="fechado">
+    <div class="nav-tab-close-inner">
+      <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>
+    </div>
+  </div>
+</a><a href="https://ticket.crescer.net/#ticket/zoom/4022" title="#103986 - [Volta Redonda-RJ] Erro Hospital Alta da internação _ não possui botão impressão" class="nav-tab task js-item js-locationVerify task-state-pending is-modified" data-key="Ticket-4022">
+  <div class="nav-tab-icon" title="Feedback">
+    
+      
+        <svg class="icon icon-small-dot icon-status-modified-inner-circle icon-task-state pending"><use xlink:href="assets/images/icons.svg#icon-small-dot"></use></svg>
+        <svg class="icon icon-status-modified-outer-circle icon-task-state pending"><use xlink:href="assets/images/icons.svg#icon-status-modified-outer-circle"></use></svg>
+      
+    
+  </div>
+  <div class="nav-tab-name u-textTruncate flex">[Volta Redonda-RJ] Erro Hospital Alta da internação _ não possui botão impressão</div>
+  <div class="nav-tab-close js-close" title="fechado">
+    <div class="nav-tab-close-inner">
+      <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>
+    </div>
+  </div>
+</a><a href="https://ticket.crescer.net/#ticket/zoom/8121" title="#108054 - [Volta Redonda-RJ][Hospital][Painel de Internação] Inclusão do botão &quot;Imprimir&quot; na aba &quot;Cuidados&quot;" class="nav-tab task js-item js-locationVerify task-state-pending is-modified" data-key="Ticket-8121">
+  <div class="nav-tab-icon" title="Feedback">
+    
+      
+        <svg class="icon icon-small-dot icon-status-modified-inner-circle icon-task-state pending"><use xlink:href="assets/images/icons.svg#icon-small-dot"></use></svg>
+        <svg class="icon icon-status-modified-outer-circle icon-task-state pending"><use xlink:href="assets/images/icons.svg#icon-status-modified-outer-circle"></use></svg>
+      
+    
+  </div>
+  <div class="nav-tab-name u-textTruncate flex">[Volta Redonda-RJ][Hospital][Painel de Internação] Inclusão do botão "Imprimir" na aba "Cuidados"</div>
+  <div class="nav-tab-close js-close" title="fechado">
+    <div class="nav-tab-close-inner">
+      <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>
+    </div>
+  </div>
+</a><a href="https://ticket.crescer.net/#ticket/zoom/8413" title="#108346 - [Nova Lima-MG][Imunização]  - Parametrização de imunos/estrategia." class="nav-tab task js-item js-locationVerify task-state-pending is-active" data-key="Ticket-8413">
+  <div class="nav-tab-icon" title="Feedback">
+    
+      
+        <svg class="icon icon-task-state pending"><use xlink:href="assets/images/icons.svg#icon-task-state"></use></svg>
+      
+    
+  </div>
+  <div class="nav-tab-name u-textTruncate flex">[Nova Lima-MG][Imunização]  - Parametrização de imunos/estrategia.</div>
+  <div class="nav-tab-close js-close" title="fechado">
+    <div class="nav-tab-close-inner">
+      <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>
+    </div>
+  </div>
+</a><a href="https://ticket.crescer.net/#ticket/zoom/7310" title="#107245 - [Passos-MG] [UPA] Atendimento UPA salva duplicado ao dar dois cliques no botão de Salvar" class="nav-tab task js-item js-locationVerify task-state-pending is-modified" data-key="Ticket-7310">
+  <div class="nav-tab-icon" title="Feedback">
+    
+      
+        <svg class="icon icon-small-dot icon-status-modified-inner-circle icon-task-state pending"><use xlink:href="assets/images/icons.svg#icon-small-dot"></use></svg>
+        <svg class="icon icon-status-modified-outer-circle icon-task-state pending"><use xlink:href="assets/images/icons.svg#icon-status-modified-outer-circle"></use></svg>
+      
+    
+  </div>
+  <div class="nav-tab-name u-textTruncate flex">[Passos-MG] [UPA] Atendimento UPA salva duplicado ao dar dois cliques no botão de Salvar</div>
+  <div class="nav-tab-close js-close" title="fechado">
+    <div class="nav-tab-close-inner">
+      <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>
+    </div>
+  </div>
+</a><a href="https://ticket.crescer.net/#ticket/zoom/7904" title="#107837 - [TST Volta Redonda][UPA] - Limpar campo observção do principio ativo na evolução" class="nav-tab task js-item js-locationVerify task-state-closed is-modified" data-key="Ticket-7904">
+  <div class="nav-tab-icon" title="fechado">
+    
+      
+        <svg class="icon icon-small-dot icon-status-modified-inner-circle icon-task-state closed"><use xlink:href="assets/images/icons.svg#icon-small-dot"></use></svg>
+        <svg class="icon icon-status-modified-outer-circle icon-task-state closed"><use xlink:href="assets/images/icons.svg#icon-status-modified-outer-circle"></use></svg>
+      
+    
+  </div>
+  <div class="nav-tab-name u-textTruncate flex">[TST Volta Redonda][UPA] - Limpar campo observção do principio ativo na evolução</div>
+  <div class="nav-tab-close js-close" title="fechado">
+    <div class="nav-tab-close-inner">
+      <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>
+    </div>
+  </div>
+</a><a href="https://ticket.crescer.net/#ticket/zoom/8446" title="#108378 - [Contagem][VISA][Pessoa jurídica] Alterar o risco DISPENSADO para DEPENDE DE INFORMAÇÃO." class="nav-tab task js-item js-locationVerify task-state-open is-modified" data-key="Ticket-8446">
+  <div class="nav-tab-icon" title="novo">
+    
+      
+        <svg class="icon icon-small-dot icon-status-modified-inner-circle icon-task-state open"><use xlink:href="assets/images/icons.svg#icon-small-dot"></use></svg>
+        <svg class="icon icon-status-modified-outer-circle icon-task-state open"><use xlink:href="assets/images/icons.svg#icon-status-modified-outer-circle"></use></svg>
+      
+    
+  </div>
+  <div class="nav-tab-name u-textTruncate flex">[Contagem][VISA][Pessoa jurídica] Alterar o risco DISPENSADO para DEPENDE DE INFORMAÇÃO.</div>
+  <div class="nav-tab-close js-close" title="fechado">
+    <div class="nav-tab-close-inner">
+      <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>
+    </div>
+  </div>
+</a><a href="https://ticket.crescer.net/#ticket/zoom/8432" title="#108364 - [Contagem][VISA][Sub classe] Atualização para versão 2.3" class="nav-tab task js-item js-locationVerify task-state-open is-modified" data-key="Ticket-8432">
+  <div class="nav-tab-icon" title="novo">
+    
+      
+        <svg class="icon icon-small-dot icon-status-modified-inner-circle icon-task-state open"><use xlink:href="assets/images/icons.svg#icon-small-dot"></use></svg>
+        <svg class="icon icon-status-modified-outer-circle icon-task-state open"><use xlink:href="assets/images/icons.svg#icon-status-modified-outer-circle"></use></svg>
+      
+    
+  </div>
+  <div class="nav-tab-name u-textTruncate flex">[Contagem][VISA][Sub classe] Atualização para versão 2.3</div>
+  <div class="nav-tab-close js-close" title="fechado">
+    <div class="nav-tab-close-inner">
+      <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>
+    </div>
+  </div>
+</a><a href="https://ticket.crescer.net/#ticket/zoom/8439" title="#108371 - [Contagem][VISA][Pessoa Juridica] Adicionar a coluna RISCO" class="nav-tab task js-item js-locationVerify task-state-open" data-key="Ticket-8439">
+  <div class="nav-tab-icon" title="novo">
+    
+      
+        <svg class="icon icon-task-state open"><use xlink:href="assets/images/icons.svg#icon-task-state"></use></svg>
+      
+    
+  </div>
+  <div class="nav-tab-name u-textTruncate flex">[Contagem][VISA][Pessoa Juridica] Adicionar a coluna RISCO</div>
+  <div class="nav-tab-close js-close" title="fechado">
+    <div class="nav-tab-close-inner">
+      <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>
+    </div>
+  </div>
+</a><a href="https://ticket.crescer.net/#ticket/zoom/8578" title="#108510 - [Montes Claros] [Almoxarifado] Atendimento de Pedido" class="nav-tab task js-item js-locationVerify task-state-open" data-key="Ticket-8578">
+  <div class="nav-tab-icon" title="novo">
+    
+      
+        <svg class="icon icon-task-state open"><use xlink:href="assets/images/icons.svg#icon-task-state"></use></svg>
+      
+    
+  </div>
+  <div class="nav-tab-name u-textTruncate flex">[Montes Claros] [Almoxarifado] Atendimento de Pedido</div>
+  <div class="nav-tab-close js-close" title="fechado">
+    <div class="nav-tab-close-inner">
+      <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>
+    </div>
+  </div>
+</a><a href="https://ticket.crescer.net/#ticket/zoom/8601" title="#108533 - [São Luis- MA] [Ambulatório] importação do arquivo bkp e sus com urgencia" class="nav-tab task js-item js-locationVerify task-state-open" data-key="Ticket-8601">
+  <div class="nav-tab-icon" title="novo">
+    
+      
+        <svg class="icon icon-task-state open"><use xlink:href="assets/images/icons.svg#icon-task-state"></use></svg>
+      
+    
+  </div>
+  <div class="nav-tab-name u-textTruncate flex">[São Luis- MA] [Ambulatório] importação do arquivo bkp e sus com urgencia</div>
+  <div class="nav-tab-close js-close" title="fechado">
+    <div class="nav-tab-close-inner">
+      <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>
+    </div>
+  </div>
+</a><a href="https://ticket.crescer.net/#ticket/zoom/8431" title="#108363 - [Contagem][VISA][Condicionalidade CNAE] Sistema não pesquisa pelos códigos do campo &quot;CNAE Sub classe&quot; das condicionalidades." class="nav-tab task js-item js-locationVerify task-state-open" data-key="Ticket-8431">
+  <div class="nav-tab-icon" title="novo">
+    
+      
+        <svg class="icon icon-task-state open"><use xlink:href="assets/images/icons.svg#icon-task-state"></use></svg>
+      
+    
+  </div>
+  <div class="nav-tab-name u-textTruncate flex">[Contagem][VISA][Condicionalidade CNAE] Sistema não pesquisa pelos códigos do campo "CNAE Sub classe" das condicionalidades.</div>
+  <div class="nav-tab-close js-close" title="fechado">
+    <div class="nav-tab-close-inner">
+      <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>
+    </div>
+  </div>
+</a><a href="https://ticket.crescer.net/#ticket/zoom/8617" title="#108549 - [POUSO ALEGRE][EXAME][ITEM DO EXAME] - MASCARA 0.00 NÃO ESTÁ FUNCIONANDO CORRETAMENTE **URGENTE**" class="nav-tab task js-item js-locationVerify task-state-closed is-modified" data-key="Ticket-8617">
+  <div class="nav-tab-icon" title="fechado">
+    
+      
+        <svg class="icon icon-small-dot icon-status-modified-inner-circle icon-task-state closed"><use xlink:href="assets/images/icons.svg#icon-small-dot"></use></svg>
+        <svg class="icon icon-status-modified-outer-circle icon-task-state closed"><use xlink:href="assets/images/icons.svg#icon-status-modified-outer-circle"></use></svg>
+      
+    
+  </div>
+  <div class="nav-tab-name u-textTruncate flex">[POUSO ALEGRE][EXAME][ITEM DO EXAME] - MASCARA 0.00 NÃO ESTÁ FUNCIONANDO CORRETAMENTE **URGENTE**</div>
+  <div class="nav-tab-close js-close" title="fechado">
+    <div class="nav-tab-close-inner">
+      <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>
+    </div>
+  </div>
+</a><a href="https://ticket.crescer.net/#ticket/zoom/8554" title="#108486 - [Itabira][PEC - Ambulatório] - Solicitação de Orçamento e Estimativa de Horas para Desenvolvimento" class="nav-tab task js-item js-locationVerify task-state-pending is-modified" data-key="Ticket-8554">
+  <div class="nav-tab-icon" title="Feedback">
+    
+      
+        <svg class="icon icon-small-dot icon-status-modified-inner-circle icon-task-state pending"><use xlink:href="assets/images/icons.svg#icon-small-dot"></use></svg>
+        <svg class="icon icon-status-modified-outer-circle icon-task-state pending"><use xlink:href="assets/images/icons.svg#icon-status-modified-outer-circle"></use></svg>
+      
+    
+  </div>
+  <div class="nav-tab-name u-textTruncate flex">[Itabira][PEC - Ambulatório] - Solicitação de Orçamento e Estimativa de Horas para Desenvolvimento</div>
+  <div class="nav-tab-close js-close" title="fechado">
+    <div class="nav-tab-close-inner">
+      <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>
+    </div>
+  </div>
+</a><a href="https://ticket.crescer.net/#ticket/zoom/8563" title="#108495 - [Nova Lima][BI] - Incluir CIAP na view &quot;Listagem de Atendimentos CID&quot;" class="nav-tab task js-item js-locationVerify task-state-open" data-key="Ticket-8563">
+  <div class="nav-tab-icon" title="novo">
+    
+      
+        <svg class="icon icon-task-state open"><use xlink:href="assets/images/icons.svg#icon-task-state"></use></svg>
+      
+    
+  </div>
+  <div class="nav-tab-name u-textTruncate flex">[Nova Lima][BI] - Incluir CIAP na view "Listagem de Atendimentos CID"</div>
+  <div class="nav-tab-close js-close" title="fechado">
+    <div class="nav-tab-close-inner">
+      <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>
+    </div>
+  </div>
+</a><a href="https://ticket.crescer.net/#ticket/zoom/8623" title="#108555 - [POUSO ALEGRE][ALMOXARIFADO][PRESCRIÇÃO] - PRESCRIÇÃO FICANDO EM BRANCO AO MUDAR PROFISSIONAL" class="nav-tab task js-item js-locationVerify task-state-open is-modified" data-key="Ticket-8623">
+  <div class="nav-tab-icon" title="novo">
+    
+      
+        <svg class="icon icon-small-dot icon-status-modified-inner-circle icon-task-state open"><use xlink:href="assets/images/icons.svg#icon-small-dot"></use></svg>
+        <svg class="icon icon-status-modified-outer-circle icon-task-state open"><use xlink:href="assets/images/icons.svg#icon-status-modified-outer-circle"></use></svg>
+      
+    
+  </div>
+  <div class="nav-tab-name u-textTruncate flex">[POUSO ALEGRE][ALMOXARIFADO][PRESCRIÇÃO] - PRESCRIÇÃO FICANDO EM BRANCO AO MUDAR PROFISSIONAL</div>
+  <div class="nav-tab-close js-close" title="fechado">
+    <div class="nav-tab-close-inner">
+      <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>
+    </div>
+  </div>
+</a><a href="https://ticket.crescer.net/#ticket/zoom/7628" title="#107563 - [Montes Claros] [Integração] SIGAF – Acompanhamento da Integração Sigaf" class="nav-tab task js-item js-locationVerify task-state-open" data-key="Ticket-7628">
+  <div class="nav-tab-icon" title="novo">
+    
+      
+        <svg class="icon icon-task-state open"><use xlink:href="assets/images/icons.svg#icon-task-state"></use></svg>
+      
+    
+  </div>
+  <div class="nav-tab-name u-textTruncate flex">[Montes Claros] [Integração] SIGAF – Acompanhamento da Integração Sigaf</div>
+  <div class="nav-tab-close js-close" title="fechado">
+    <div class="nav-tab-close-inner">
+      <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>
+    </div>
+  </div>
+</a><a href="https://ticket.crescer.net/#ticket/zoom/8502" title="#108434 - [Jaboticabal-SP] [Ambulatório] Arquivo RAAS" class="nav-tab task js-item js-locationVerify task-state-pending is-modified" data-key="Ticket-8502">
+  <div class="nav-tab-icon" title="Feedback">
+    
+      
+        <svg class="icon icon-small-dot icon-status-modified-inner-circle icon-task-state pending"><use xlink:href="assets/images/icons.svg#icon-small-dot"></use></svg>
+        <svg class="icon icon-status-modified-outer-circle icon-task-state pending"><use xlink:href="assets/images/icons.svg#icon-status-modified-outer-circle"></use></svg>
+      
+    
+  </div>
+  <div class="nav-tab-name u-textTruncate flex">[Jaboticabal-SP] [Ambulatório] Arquivo RAAS</div>
+  <div class="nav-tab-close js-close" title="fechado">
+    <div class="nav-tab-close-inner">
+      <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>
+    </div>
+  </div>
+</a><a href="https://ticket.crescer.net/#ticket/zoom/8555" title="#108487 - [Itabira][PEC - Ambulatório] - Solicitação de Orçamento e Estimativa de Horas para Desenvolvimento" class="nav-tab task js-item js-locationVerify task-state-open is-modified" data-key="Ticket-8555">
+  <div class="nav-tab-icon" title="aberto">
+    
+      
+        <svg class="icon icon-small-dot icon-status-modified-inner-circle icon-task-state open"><use xlink:href="assets/images/icons.svg#icon-small-dot"></use></svg>
+        <svg class="icon icon-status-modified-outer-circle icon-task-state open"><use xlink:href="assets/images/icons.svg#icon-status-modified-outer-circle"></use></svg>
+      
+    
+  </div>
+  <div class="nav-tab-name u-textTruncate flex">[Itabira][PEC - Ambulatório] - Solicitação de Orçamento e Estimativa de Horas para Desenvolvimento</div>
+  <div class="nav-tab-close js-close" title="fechado">
+    <div class="nav-tab-close-inner">
+      <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>
+    </div>
+  </div>
+</a><a href="https://ticket.crescer.net/#ticket/zoom/8634" title="#108566 - [Petrolina-PE][Regulação] - Permitir selecionar lista de Unidades na agenda de serviço" class="nav-tab task js-item js-locationVerify task-state-open" data-key="Ticket-8634">
+  <div class="nav-tab-icon" title="novo">
+    
+      
+        <svg class="icon icon-task-state open"><use xlink:href="assets/images/icons.svg#icon-task-state"></use></svg>
+      
+    
+  </div>
+  <div class="nav-tab-name u-textTruncate flex">[Petrolina-PE][Regulação] - Permitir selecionar lista de Unidades na agenda de serviço</div>
+  <div class="nav-tab-close js-close" title="fechado">
+    <div class="nav-tab-close-inner">
+      <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>
+    </div>
+  </div>
+</a><a href="https://ticket.crescer.net/#ticket/zoom/8540" title="#108472 - [POUSO ALEGRE][LABORATÓRIO][RESULTADO] - RESULTADO DE EXAME NÃO SALVA" class="nav-tab task js-item js-locationVerify task-state-open is-modified" data-key="Ticket-8540">
+  <div class="nav-tab-icon" title="novo">
+    
+      
+        <svg class="icon icon-small-dot icon-status-modified-inner-circle icon-task-state open"><use xlink:href="assets/images/icons.svg#icon-small-dot"></use></svg>
+        <svg class="icon icon-status-modified-outer-circle icon-task-state open"><use xlink:href="assets/images/icons.svg#icon-status-modified-outer-circle"></use></svg>
+      
+    
+  </div>
+  <div class="nav-tab-name u-textTruncate flex">[POUSO ALEGRE][LABORATÓRIO][RESULTADO] - RESULTADO DE EXAME NÃO SALVA</div>
+  <div class="nav-tab-close js-close" title="fechado">
+    <div class="nav-tab-close-inner">
+      <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>
+    </div>
+  </div>
+</a><a href="https://ticket.crescer.net/#ticket/zoom/7539" title="#107474 - [Macaé- RJ] [Aplicativo ACS] Aplicativo com erros" class="nav-tab task js-item js-locationVerify task-state-open" data-key="Ticket-7539">
+  <div class="nav-tab-icon" title="novo">
+    
+      
+        <svg class="icon icon-task-state open"><use xlink:href="assets/images/icons.svg#icon-task-state"></use></svg>
+      
+    
+  </div>
+  <div class="nav-tab-name u-textTruncate flex">[Macaé- RJ] [Aplicativo ACS] Aplicativo com erros</div>
+  <div class="nav-tab-close js-close" title="fechado">
+    <div class="nav-tab-close-inner">
+      <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>
+    </div>
+  </div>
+</a><a href="https://ticket.crescer.net/#ticket/zoom/8659" title="#108591 - [João Pessoa-PB] [Almoxarifado] Erro transferência sem pedido / atendimento pedido" class="nav-tab task js-item js-locationVerify task-state-open is-modified" data-key="Ticket-8659">
+  <div class="nav-tab-icon" title="novo">
+    
+      
+        <svg class="icon icon-small-dot icon-status-modified-inner-circle icon-task-state open"><use xlink:href="assets/images/icons.svg#icon-small-dot"></use></svg>
+        <svg class="icon icon-status-modified-outer-circle icon-task-state open"><use xlink:href="assets/images/icons.svg#icon-status-modified-outer-circle"></use></svg>
+      
+    
+  </div>
+  <div class="nav-tab-name u-textTruncate flex">[João Pessoa-PB] [Almoxarifado] Erro transferência sem pedido / atendimento pedido</div>
+  <div class="nav-tab-close js-close" title="fechado">
+    <div class="nav-tab-close-inner">
+      <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>
+    </div>
+  </div>
+</a><a href="https://ticket.crescer.net/#ticket/zoom/7918" title="#107851 - [Macaé- RJ] [Central de Aplicativos] Adicionar Dados de Glicemia, Pressão Arterial e Temperatura" class="nav-tab task js-item js-locationVerify task-state-open" data-key="Ticket-7918">
+  <div class="nav-tab-icon" title="novo">
+    
+      
+        <svg class="icon icon-task-state open"><use xlink:href="assets/images/icons.svg#icon-task-state"></use></svg>
+      
+    
+  </div>
+  <div class="nav-tab-name u-textTruncate flex">[Macaé- RJ] [Central de Aplicativos] Adicionar Dados de Glicemia, Pressão Arterial e Temperatura</div>
+  <div class="nav-tab-close js-close" title="fechado">
+    <div class="nav-tab-close-inner">
+      <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>
+    </div>
+  </div>
+</a></div>
+  
+    <ul class="user-menu navbar-items-personal">
+  
+    <li class="user dropup ">
+      <a class="list-button dropdown-toggle js-action" data-toggle="dropdown" href="https://ticket.crescer.net/#current_user" title="claudio.vieira@vivver.com.br">
+        <span class="dropdown-nose"></span>
+        
+          <span class="js-avatar"><span class="avatar size-40 avatar--unique" style="background-position: -159.15242143037358px -141.6044594174726px;" data-id="39">
+  
+  CV
+</span>
+</span>
+        
+      </a>
+      <ul class="dropdown-menu dropdown-menu--light" role="menu">
+        
+          
+          
+            <li class="dropdown-header">Visto Recentemente</li>
+          
+          <li>
+            
+            <a href="https://ticket.crescer.net/#ticket/zoom/7918" data-key="" class="horizontal center ">
+            
+              <span class="flex u-textTruncate">Tíquete ([Macaé- RJ] [Central de Aplicativos] Adicionar Dados de Glicemia, Pressão Arterial e Temperatura)</span>
+              
+              
+              
+            
+            </a>
+            
+          </li>
+        
+          
+          
+          <li>
+            
+            <a href="https://ticket.crescer.net/#ticket/zoom/8659" data-key="" class="horizontal center ">
+            
+              <span class="flex u-textTruncate">Tíquete ([João Pessoa-PB] [Almoxarifado] Erro transferência sem pedido / atendimento pedido)</span>
+              
+              
+              
+            
+            </a>
+            
+          </li>
+        
+          
+          
+          <li>
+            
+            <a href="https://ticket.crescer.net/#ticket/zoom/7539" data-key="" class="horizontal center ">
+            
+              <span class="flex u-textTruncate">Tíquete ([Macaé- RJ] [Aplicativo ACS] Aplicativo com erros)</span>
+              
+              
+              
+            
+            </a>
+            
+          </li>
+        
+          
+          
+          <li>
+            
+            <a href="https://ticket.crescer.net/#ticket/zoom/8540" data-key="" class="horizontal center ">
+            
+              <span class="flex u-textTruncate">Tíquete ([POUSO ALEGRE][LABORATÓRIO][RESULTADO] - RESULTADO DE EXAME NÃO SALVA)</span>
+              
+              
+              
+            
+            </a>
+            
+          </li>
+        
+          
+          
+          <li>
+            
+            <a href="https://ticket.crescer.net/#ticket/zoom/8634" data-key="" class="horizontal center ">
+            
+              <span class="flex u-textTruncate">Tíquete ([Petrolina-PE][Regulação] - Permitir selecionar lista de Unidades na agenda de serviço)</span>
+              
+              
+              
+            
+            </a>
+            
+          </li>
+        
+          
+          
+          <li>
+            
+            <a href="https://ticket.crescer.net/#ticket/zoom/8555" data-key="" class="horizontal center ">
+            
+              <span class="flex u-textTruncate">Tíquete ([Itabira][PEC - Ambulatório] - Solicitação de Orçamento e Estimativa de Horas para Desenvolvimento)</span>
+              
+              
+              
+            
+            </a>
+            
+          </li>
+        
+          
+          
+          <li>
+            
+            <a href="https://ticket.crescer.net/#ticket/zoom/8502" data-key="" class="horizontal center ">
+            
+              <span class="flex u-textTruncate">Tíquete ([Jaboticabal-SP] [Ambulatório] Arquivo RAAS)</span>
+              
+              
+              
+            
+            </a>
+            
+          </li>
+        
+          
+          
+          <li>
+            
+            <a href="https://ticket.crescer.net/#ticket/zoom/7628" data-key="" class="horizontal center ">
+            
+              <span class="flex u-textTruncate">Tíquete ([Montes Claros] [Integração] SIGAF – Acompanhamento da Integração Sigaf)</span>
+              
+              
+              
+            
+            </a>
+            
+          </li>
+        
+          
+          
+          <li>
+            
+            <a href="https://ticket.crescer.net/#ticket/zoom/8623" data-key="" class="horizontal center ">
+            
+              <span class="flex u-textTruncate">Tíquete ([POUSO ALEGRE][ALMOXARIFADO][PRESCRIÇÃO] - PRESCRIÇÃO FICANDO EM BRANCO AO MUDAR PROFISSIONAL)</span>
+              
+              
+              
+            
+            </a>
+            
+          </li>
+        
+          
+          
+          <li>
+            
+            <a href="https://ticket.crescer.net/#ticket/zoom/8563" data-key="" class="horizontal center ">
+            
+              <span class="flex u-textTruncate">Tíquete ([Nova Lima][BI] - Incluir CIAP na view "Listagem de Atendimentos CID")</span>
+              
+              
+              
+            
+            </a>
+            
+          </li>
+        
+          
+            <li class="divider"></li>
+          
+          
+          <li>
+            
+            <a href="https://ticket.crescer.net/#profile" data-key="" class="horizontal center ">
+            
+              <span class="flex u-textTruncate">Perfil</span>
+              
+              
+              
+            
+            </a>
+            
+          </li>
+        
+          
+            <li class="divider"></li>
+          
+          
+          <li>
+            
+            <a href="https://ticket.crescer.net/#logout" data-key="" class="horizontal center ">
+            
+              <span class="flex u-textTruncate">Deslogar</span>
+              
+              <svg class="icon icon-signout "><use xlink:href="assets/images/icons.svg#icon-signout"></use></svg>
+              
+            
+            </a>
+            
+          </li>
+        
+      </ul>
+    </li>
+  
+
+  
+    <li class="settings add">
+      <a class="list-button fit horizontal centered" href="https://ticket.crescer.net/#customer_ticket_new" title="Nova">
+        <svg class="icon icon-plus user-menu-icon"><use xlink:href="assets/images/icons.svg#icon-plus"></use></svg>
+      </a>
+    </li>
+  
+
+</ul>
+  
+  <a class="menu-item menu-item-navigation-toggle-button js-navigation-toggle-button" href="https://ticket.crescer.net/#">
+    <svg class="icon icon-double-arrow-right "><use xlink:href="assets/images/icons.svg#icon-double-arrow-right"></use></svg>
+    <svg class="icon icon-double-arrow-left "><use xlink:href="assets/images/icons.svg#icon-double-arrow-left"></use></svg>
+  </a>
+</div><div class="popover popover--notifications right js-notificationsContainer is-empty" role="tooltip"><div class="arrow js-arrow"></div>
+<div class="popover-notificationsHeader js-header">
+  <div class="popover-title">Notificações <span class="popover-notificationsCounter js-notificationsCounter"></span></div>
+  <a class="btn btn--text btn--subtle js-mark hide">Marcar todas como lida</a>
+</div>
+<div class="popover-content js-content">
+  <div class="activity-placeholder js-noNotifications">
+    Nenhuma notificação não lida. :)
+  </div>
+  <div class="js-items"></div>
+</div></div><div id="content_permanent_Ticket-8413" class="content horizontal flex active"><div class="tabsSidebar-holder">
+  <div class="scrollPageHeader tabsSidebar-sidebarSpacer" style="right: 17px; transform: translateY(-64px);">
+    <small class="ticket-number-copy-header">
+      Ticket#<span class="ticket-number">108346</span>
+      <svg class="icon icon-clipboard ticketNumberCopy-icon u-clickable">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-clipboard"></use>
+      </svg>
+    </small>
+    <div class="js-ticketTitleContainer ticket-title"><div contenteditable="true" class="ticket-title-update js-objectTitle" data-placeholder="Digite o Título…">[Nova Lima-MG][Imunização]  - Parametrização de imunos/estrategia.</div>
+</div>
+    <div class="js-highlighterContainer highlighter"></div>
+    <div class="js-overviewNavigatorContainer overview-navigator"><div class="pagination-counter" title="Prioriz. Semanais">
+  <span class="pagination-item-current">8</span>/<span class="pagination-total-items">8</span>
+</div>
+<div class="pagination horizontal">
+  <a class="btn btn--action btn--split--first" href="https://ticket.crescer.net/#ticket/zoom/7805" data-id="7805" title="Anterior na visão">
+    
+      <svg class="icon icon-arrow-left "><use xlink:href="assets/images/icons.svg#icon-arrow-left"></use></svg>
+    
+  </a>
+  <a class="btn btn--action btn--split--last is-disabled" href="https://ticket.crescer.net/" title="Próximo em Visão Geral">
+    
+      <svg class="icon icon-arrow-right arrow--disabled"><use xlink:href="assets/images/icons.svg#icon-arrow-right"></use></svg>
+    
+  </a>
+</div>
+</div>
+  </div>
+  <div class="main no-padding flex tabsSidebar-sidebarSpacer tabsSidebar-tabsSpacer">
+    <div class="ticketZoom">
+      <div class="ticketZoom-controls">
+        <div class="js-settingContainer"></div>
+        <div class="spacer"></div>
+        <div class="js-highlighterContainer highlighter"></div>
+        <div class="js-overviewNavigatorContainer overview-navigator"><div class="pagination-counter" title="Prioriz. Semanais">
+  <span class="pagination-item-current">8</span>/<span class="pagination-total-items">8</span>
+</div>
+<div class="pagination horizontal">
+  <a class="btn btn--action btn--split--first" href="https://ticket.crescer.net/#ticket/zoom/7805" data-id="7805" title="Anterior na visão">
+    
+      <svg class="icon icon-arrow-left "><use xlink:href="assets/images/icons.svg#icon-arrow-left"></use></svg>
+    
+  </a>
+  <a class="btn btn--action btn--split--last is-disabled" href="https://ticket.crescer.net/" title="Próximo em Visão Geral">
+    
+      <svg class="icon icon-arrow-right arrow--disabled"><use xlink:href="assets/images/icons.svg#icon-arrow-right"></use></svg>
+    
+  </a>
+</div>
+</div>
+      </div>
+      <div class="ticketZoom-header">
+        <div class="flex vertical center">
+          <div class="flex horizontal center">
+            <div class="zIndex-1 js-avatar"><span class="avatar size-50 user-popover user-popover avatar--unique" style="background-position: -288.65169230671995px -226.2944968071648px;" data-id="38">
+  
+  Jc
+</span>
+</div>
+            <div class="overlap-x-6 js-avatar-organization"><span class="avatar avatar--organization size-50 organization-popover" data-id="14">
+  
+  
+    <svg class="icon icon-organization "><use xlink:href="assets/images/icons.svg#icon-organization"></use></svg>
+  
+</span>
+</div>
+          </div>
+          <div class="js-ticketTitleContainer ticket-title"><div contenteditable="true" class="ticket-title-update js-objectTitle" data-placeholder="Digite o Título…">[Nova Lima-MG][Imunização]  - Parametrização de imunos/estrategia.</div>
+</div>
+          <div class="js-ticketMetaContainer"><small class="task-subline">
+  <span class="ticket-number-copy">
+    Ticket#<span class="ticket-number js-objectNumber" data-number="Ticket#108346">108346</span>
+    <svg class="icon icon-clipboard ticketNumberCopy-icon u-clickable">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-clipboard"></use>
+    </svg>
+  </span>
+  - criado <time class="humanTimeFromNow " datetime="2024-01-09T16:33:51.461Z" title="09/01/2024 13:33">09/01/2024</time>
+
+
+</small>
+</div>
+        </div>
+      </div>
+      <div class="ticket-article"><div class="ticket-article-item customer" data-id="28282" id="article-28282">
+
+
+<div class="article-meta-clip top">
+  <div class="article-content-meta top hide">
+    <div class="article-meta top">
+    
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key u-textTruncate">De</div>
+        <div class="article-meta-value flex contain-text">Jean costa  <span class="text-muted">&lt;jean.costa@vivver.com.br&gt;</span></div>
+      </div>
+    
+    
+    
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key u-textTruncate">Para</div>
+        <div class="article-meta-value flex contain-text">Crescer Tecnologia - N2</div>
+      </div>
+    
+    
+    
+      
+    </div>
+  </div>
+</div>
+
+<div class="article-content">
+  
+  
+  
+  <div class="js-avatar"><span class="avatar size-40 user-popover user-popover avatar--unique" style="background-position: -230.92135384537596px -181.03559744573184px;" data-id="38">
+  
+  Jc
+</span>
+</div>
+  <div class="bubble-gap">
+    <div class="internal-border">
+      <div class="textBubble">
+        <div class="bubble-arrow"></div>
+        <div class="textBubble-content" id="article-content-28282" data-id="28282">
+          <div class="richtext-content" dir="auto"><div>Muniicipio: Nova Lima</div><div>Módulo: Imunizaçao</div><div>Versão: 23.12.04</div><div>caminho: Imunização/parametrização</div><div><br></div><div><br></div><div>O Ministério da Saúde no ano de 2024 incorporou a vacina contra a COVID-19 no PNI - Programa nacional de Imunização, portanto, a partir do corrente ano a mencionada vacina faz parte da rotina no calendário Nacional.&nbsp;</div><div>Diante dessa decisão, as vacinas contra a COVID-19 devem ser lançadas no VIVVER e não mais no site de campanha e com isso a estratégia vacinal no caso da Unidade 36 - "Policlínica Municipal" passa a ser "Rotina".&nbsp;</div><div>Destaca-se que o sistema VIVVER, no que se refere as demais UBS (APS) provisoriamente, acompanhando as diretrizes do E-SUS, sistema que recebe as informações, deve constar a estratégia vacinal "Campanha Seletiva", não havendo a necessidade de qualquer intervenção, pelos menos até ulterior alteração do E-SUS.</div><div>Nesse sentido, conforme exemplos que se seguem, a Gerência de Imunização solicita a implementação da mudança no VIVVER para que na Unidade 36 "Policlínica Municipal" a estratégia vacinal para as vacinas contra a COVID incluir no campo estratégia vacinal "Rotina".</div></div>
+          <div class="textBubble-overflowContainer hide">
+            <div class="btn btn--text js-toggleFold">Ver mais</div>
+          </div>
+        </div>
+        
+  <div class="attachments attachments--list">
+    <svg class="icon icon-paperclip "><use xlink:href="assets/images/icons.svg#icon-paperclip"></use></svg>
+    <div class="attachments-title">2 Arquivo(s) Anexado</div>
+    
+      
+        
+        <a class="attachment attachment--preview file-pdf" href="https://ticket.crescer.net/api/v1/ticket_attachment/8413/28282/17614?disposition=attachment" data-type="attachment" data-preview-url="api/v1/ticket_attachment/8413/28282/17614?view=preview" data-id="17614" target="_blank">
+          <div class="attachment-icon js-preview">
+          
+            
+              <svg class="icon icon-file-pdf "><use xlink:href="assets/images/icons.svg#icon-file-pdf"></use></svg>
+            
+          
+          </div>
+          <div class="attachment-text">
+            <span class="attachment-name u-highlight">Registro_Estratégia_2024___Memorando_estadual_022024_Registro_no_sistema.pdf</span>
+            <div class="attachment-size">1.2 MB</div>
+          </div>
+          
+        </a>
+      
+    
+      
+        
+        <a class="attachment attachment--preview file-pdf" href="https://ticket.crescer.net/api/v1/ticket_attachment/8413/28282/17615?disposition=attachment" data-type="attachment" data-preview-url="api/v1/ticket_attachment/8413/28282/17615?view=preview" data-id="17615" target="_blank">
+          <div class="attachment-icon js-preview">
+          
+            
+              <svg class="icon icon-file-pdf "><use xlink:href="assets/images/icons.svg#icon-file-pdf"></use></svg>
+            
+          
+          </div>
+          <div class="attachment-text">
+            <span class="attachment-name u-highlight">Informe vacinacao  covid 2024_final.pdf</span>
+            <div class="attachment-size">5 MB</div>
+          </div>
+          
+        </a>
+      
+    
+  </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="article-meta-clip bottom">
+  <div class="article-content-meta bottom hide">
+    <div class="article-meta bottom">
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key">Canal</div>
+        <div class="article-meta-value">
+          
+          <svg class="icon icon-web article-meta-icon"><use xlink:href="assets/images/icons.svg#icon-web"></use></svg>
+          web
+          <div class="article-meta-links">
+          
+            
+            
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="js-article-actions"><div class="article-content article-actions horizontal">
+  
+</div>
+</div>
+
+<a href="https://https//ticket.crescer.net//#ticket/zoom/8413/28282"><small class="task-subline"><time class="humanTimeFromNow " datetime="2024-01-09T16:33:51.693Z" title="09/01/2024 13:33">09/01/2024</time></small></a>
+</div><div class="ticket-article-item customer" data-id="28284" id="article-28284">
+
+
+<div class="article-meta-clip top">
+  <div class="article-content-meta top hide">
+    <div class="article-meta top">
+    
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key u-textTruncate">De</div>
+        <div class="article-meta-value flex contain-text">Jean costa  <span class="text-muted">&lt;jean.costa@vivver.com.br&gt;</span></div>
+      </div>
+    
+    
+    
+    
+    
+      
+    </div>
+  </div>
+</div>
+
+<div class="article-content">
+  
+  
+  
+  <div class="js-avatar"><span class="avatar size-40 user-popover user-popover avatar--unique" style="background-position: -230.92135384537596px -181.03559744573184px;" data-id="38">
+  
+  Jc
+</span>
+</div>
+  <div class="bubble-gap">
+    <div class="internal-border">
+      <div class="textBubble">
+        <div class="bubble-arrow"></div>
+        <div class="textBubble-content" id="article-content-28284" data-id="28284">
+          <div class="richtext-content" dir="auto"><div>
+<div>Muniicipio: São Domingos do Prata</div>
+<div>Módulo: Imunizaçao</div>
+<div>Versão: 23.12.04</div>
+<div>caminho: Imunização/parametrização</div>
+<br>Boa tarde</div><div>Favor introduzir na grade de vacinas do viver as vacinas do covid19.</div><div>VACINA CONTRA SARS-COV2 PEDIATRICA MENOR DE 5 ANOS</div><div>VACINA CONTRA SARS-COV2 PEDIATRICA &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </div><div>VACINA CONTRA SARS-COV2 &nbsp;BIVALENTE 2024 &nbsp;</div><div>SÃO DOMINGOS DO PRATA</div><div>RENATA LUIZA SILVA DE OLIVEIRA</div><div>31(971288909)</div><div>GRATA</div></div>
+          <div class="textBubble-overflowContainer hide">
+            <div class="btn btn--text js-toggleFold">Ver mais</div>
+          </div>
+        </div>
+        
+  <div class="attachments attachments--list">
+    <svg class="icon icon-paperclip "><use xlink:href="assets/images/icons.svg#icon-paperclip"></use></svg>
+    <div class="attachments-title">1 Arquivo(s) Anexado</div>
+    
+      
+        
+        <a class="attachment attachment--preview file-pdf" href="https://ticket.crescer.net/api/v1/ticket_attachment/8413/28284/17617?disposition=attachment" data-type="attachment" data-preview-url="api/v1/ticket_attachment/8413/28284/17617?view=preview" data-id="17617" target="_blank">
+          <div class="attachment-icon js-preview">
+          
+            
+              <svg class="icon icon-file-pdf "><use xlink:href="assets/images/icons.svg#icon-file-pdf"></use></svg>
+            
+          
+          </div>
+          <div class="attachment-text">
+            <span class="attachment-name u-highlight">SEI_80002879_Memorando_Circular_2.pdf</span>
+            <div class="attachment-size">63 KB</div>
+          </div>
+          
+        </a>
+      
+    
+  </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="article-meta-clip bottom">
+  <div class="article-content-meta bottom hide">
+    <div class="article-meta bottom">
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key">Canal</div>
+        <div class="article-meta-value">
+          
+          <svg class="icon icon-web article-meta-icon"><use xlink:href="assets/images/icons.svg#icon-web"></use></svg>
+          web
+          <div class="article-meta-links">
+          
+            
+            
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="js-article-actions"><div class="article-content article-actions horizontal">
+  
+</div>
+</div>
+
+<a href="https://https//ticket.crescer.net//#ticket/zoom/8413/28284"><small class="task-subline"><time class="humanTimeFromNow " datetime="2024-01-09T17:08:33.468Z" title="09/01/2024 14:08">09/01/2024</time></small></a>
+</div><div class="ticket-article-item agent" data-id="28319" id="article-28319">
+
+
+<div class="article-meta-clip top">
+  <div class="article-content-meta top hide">
+    <div class="article-meta top">
+    
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key u-textTruncate">De</div>
+        <div class="article-meta-value flex contain-text">Filipe Carneiro</div>
+      </div>
+    
+    
+    
+    
+    
+      
+    </div>
+  </div>
+</div>
+
+<div class="article-content">
+  
+  
+  
+  <div class="js-avatar"><span class="avatar size-40 user-popover user-popover" style="background-image: url(api/v1/users/image/c88a5b3fa5607d83082d5a39b53fb488)" data-id="33" data-initials="FC">
+  
+</span>
+</div>
+  <div class="bubble-gap">
+    <div class="internal-border">
+      <div class="textBubble">
+        <div class="bubble-arrow"></div>
+        <div class="textBubble-content" id="article-content-28319" data-id="28319">
+          <div class="richtext-content" dir="auto">Temos que aguardar a atualização do PEC/e-SUS.<div><br></div><div>Na integração ainda não existe a estratégia de Rotina para esses imunos, conforme regra mais atual:</div><div><br></div><div><a href="https://integracao.esusab.ufsc.br/ledi/documentacao/regras/validar_regras_vacinacao.html" rel="nofollow noreferrer noopener" target="_blank">https://integracao.esusab.ufsc.br/ledi/documentacao/regras/validar_regras_vacinacao.html</a></div></div>
+          <div class="textBubble-overflowContainer hide">
+            <div class="btn btn--text js-toggleFold">Ver mais</div>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="article-meta-clip bottom">
+  <div class="article-content-meta bottom hide">
+    <div class="article-meta bottom">
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key">Canal</div>
+        <div class="article-meta-value">
+          
+          <svg class="icon icon-note article-meta-icon"><use xlink:href="assets/images/icons.svg#icon-note"></use></svg>
+          nota
+          <div class="article-meta-links">
+          
+            
+            
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="js-article-actions"><div class="article-content article-actions horizontal">
+  
+</div>
+</div>
+
+<a href="https://https//ticket.crescer.net//#ticket/zoom/8413/28319"><small class="task-subline"><time class="humanTimeFromNow " datetime="2024-01-10T13:23:16.075Z" title="10/01/2024 10:23">10/01/2024</time></small></a>
+</div><div class="ticket-article-item system" data-id="28320" id="article-28320">
+
+
+<div class="article-meta-clip top">
+  <div class="article-content-meta top hide">
+    <div class="article-meta top">
+    
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key u-textTruncate">De</div>
+        <div class="article-meta-value flex contain-text">- </div>
+      </div>
+    
+    
+    
+    
+    
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key u-textTruncate">Assunto</div>
+        <div class="article-meta-value flex contain-text">Encerramento automático</div>
+      </div>
+    
+      
+    </div>
+  </div>
+</div>
+
+<div class="article-content">
+  
+  
+  
+  <div class="js-avatar"><span class="avatar " style="background: white">
+  <svg class="icon icon-logo "><use xlink:href="assets/images/icons.svg#icon-logo"></use></svg>
+</span>
+</div>
+  <div class="bubble-gap">
+    <div class="internal-border">
+      <div class="textBubble">
+        <div class="bubble-arrow"></div>
+        <div class="textBubble-content" id="article-content-28320" data-id="28320">
+          <div class="richtext-content" dir="auto">Este ticket fechará automaticamente em 10 dias caso não seja retornado.</div>
+          <div class="textBubble-overflowContainer hide">
+            <div class="btn btn--text js-toggleFold">Ver mais</div>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="article-meta-clip bottom">
+  <div class="article-content-meta bottom hide">
+    <div class="article-meta bottom">
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key">Canal</div>
+        <div class="article-meta-value">
+          
+          <svg class="icon icon-note article-meta-icon"><use xlink:href="assets/images/icons.svg#icon-note"></use></svg>
+          nota
+          <div class="article-meta-links">
+          
+            
+            
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="js-article-actions"><div class="article-content article-actions horizontal">
+  
+</div>
+</div>
+
+<a href="https://https//ticket.crescer.net//#ticket/zoom/8413/28320"><small class="task-subline"><time class="humanTimeFromNow " datetime="2024-01-10T13:23:16.979Z" title="10/01/2024 10:23">10/01/2024</time></small></a>
+</div><div class="ticket-article-item customer" data-id="28323" id="article-28323">
+
+
+<div class="article-meta-clip top">
+  <div class="article-content-meta top hide">
+    <div class="article-meta top">
+    
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key u-textTruncate">De</div>
+        <div class="article-meta-value flex contain-text">Jean costa  <span class="text-muted">&lt;jean.costa@vivver.com.br&gt;</span></div>
+      </div>
+    
+    
+    
+    
+    
+      
+    </div>
+  </div>
+</div>
+
+<div class="article-content">
+  
+  
+  
+  <div class="js-avatar"><span class="avatar size-40 user-popover user-popover avatar--unique" style="background-position: -230.92135384537596px -181.03559744573184px;" data-id="38">
+  
+  Jc
+</span>
+</div>
+  <div class="bubble-gap">
+    <div class="internal-border">
+      <div class="textBubble">
+        <div class="bubble-arrow"></div>
+        <div class="textBubble-content" id="article-content-28323" data-id="28323">
+          <div class="richtext-content" dir="auto">Bom dia!<br><br>Entrantanto, temos que considerar tambem as regras do SIPNI tendo em vista que estamos integrando via RNDS. As vacinas aplicadas em Unidades que não são de APS serão enviadas via RNDS. Portanto deve-se avaliar e implementar as regras do SIPNI.<br><br><img style="max-width:100%;width: 847px;max-width: 100%;" src="./Crescer Tecnologia - #108346 - [Nova Lima-MG][Imunização] - Parametrização de imunos_estrategia._files/image1.jpeg"><br></div>
+          <div class="textBubble-overflowContainer hide">
+            <div class="btn btn--text js-toggleFold">Ver mais</div>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="article-meta-clip bottom">
+  <div class="article-content-meta bottom hide">
+    <div class="article-meta bottom">
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key">Canal</div>
+        <div class="article-meta-value">
+          
+          <svg class="icon icon-web article-meta-icon"><use xlink:href="assets/images/icons.svg#icon-web"></use></svg>
+          web
+          <div class="article-meta-links">
+          
+            
+            
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="js-article-actions"><div class="article-content article-actions horizontal">
+  
+</div>
+</div>
+
+<a href="https://https//ticket.crescer.net//#ticket/zoom/8413/28323"><small class="task-subline"><time class="humanTimeFromNow " datetime="2024-01-10T13:31:47.439Z" title="10/01/2024 10:31">10/01/2024</time></small></a>
+</div><div class="ticket-article-item agent" data-id="28327" id="article-28327">
+
+
+<div class="article-meta-clip top">
+  <div class="article-content-meta top hide">
+    <div class="article-meta top">
+    
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key u-textTruncate">De</div>
+        <div class="article-meta-value flex contain-text">Sylvio Matos via Suporte  <span class="text-muted">&lt;ticket@crescer.net&gt;</span></div>
+      </div>
+    
+    
+    
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key u-textTruncate">Para</div>
+        <div class="article-meta-value flex contain-text"> <span class="text-muted">&lt;jean.costa@vivver.com.br&gt;</span></div>
+      </div>
+    
+    
+    
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key u-textTruncate">Assunto</div>
+        <div class="article-meta-value flex contain-text">[Nova Lima-MG][Imuniziação]  - Parametrização de imunos/estrategia.</div>
+      </div>
+    
+      
+    </div>
+  </div>
+</div>
+
+<div class="article-content">
+  
+  
+  
+  <div class="js-avatar"><span class="avatar size-40 user-popover user-popover avatar--unique" style="background-position: -24.196503192088525px -182.36888751469706px;" data-id="30">
+  
+  SM
+</span>
+</div>
+  <div class="bubble-gap">
+    <div class="internal-border">
+      <div class="textBubble">
+        <div class="bubble-arrow"></div>
+        <div class="textBubble-content" id="article-content-28327" data-id="28327" data-height="386.75" data-height-origin="90" style="height: 90px;">
+          <div class="richtext-content" dir="auto"><div>Favor validar<br><br>
+</div><span class="js-signatureMarker"></span><div><blockquote type="cite">Em terça-feira, 9 de janeiro de 2024 às 14:08:33, Jean costa escreva:<br><br><div>VACINA CONTRA SARS-COV2 PEDIATRICA MENOR DE 5 ANOS</div>
+<div></div>
+<br>
+</blockquote></div><div><br></div><br><br><div data-signature="true" data-signature-id="1">  Sylvio Matos<br><br>--<br> Super Support - Waterford Business Park<br> 5201 Blue Lagoon Drive - 8th Floor &amp; 9th Floor - Miami, 33126 USA<br> Email: hot@example.com - Web: <a href="http://www.example.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.example.com/</a><br>--</div></div>
+          <div class="textBubble-overflowContainer">
+            <div class="btn btn--text js-toggleFold">Ver mais</div>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="article-meta-clip bottom">
+  <div class="article-content-meta bottom hide">
+    <div class="article-meta bottom">
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key">Canal</div>
+        <div class="article-meta-value">
+          
+          <svg class="icon icon-email article-meta-icon"><use xlink:href="assets/images/icons.svg#icon-email"></use></svg>
+          e-mail
+          <div class="article-meta-links">
+          
+            
+            
+              
+              <a class="text-muted" href="https://ticket.crescer.net/api/v1/ticket_article_plain/28327" target="_blank">Raw</a>
+              
+            
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="js-article-actions"><div class="article-content article-actions horizontal">
+  
+</div>
+</div>
+
+<a href="https://https//ticket.crescer.net//#ticket/zoom/8413/28327"><small class="task-subline"><time class="humanTimeFromNow " datetime="2024-01-10T14:04:41.388Z" title="10/01/2024 11:04">10/01/2024</time></small></a>
+</div><div class="ticket-article-item agent" data-id="28329" id="article-28329">
+
+
+<div class="article-meta-clip top">
+  <div class="article-content-meta top hide">
+    <div class="article-meta top">
+    
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key u-textTruncate">De</div>
+        <div class="article-meta-value flex contain-text">Filipe Carneiro</div>
+      </div>
+    
+    
+    
+    
+    
+      
+    </div>
+  </div>
+</div>
+
+<div class="article-content">
+  
+  
+  
+  <div class="js-avatar"><span class="avatar size-40 user-popover user-popover" style="background-image: url(api/v1/users/image/c88a5b3fa5607d83082d5a39b53fb488)" data-id="33" data-initials="FC">
+  
+</span>
+</div>
+  <div class="bubble-gap">
+    <div class="internal-border">
+      <div class="textBubble">
+        <div class="bubble-arrow"></div>
+        <div class="textBubble-content" id="article-content-28329" data-id="28329">
+          <div class="richtext-content" dir="auto">Favor validar.</div>
+          <div class="textBubble-overflowContainer hide">
+            <div class="btn btn--text js-toggleFold">Ver mais</div>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="article-meta-clip bottom">
+  <div class="article-content-meta bottom hide">
+    <div class="article-meta bottom">
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key">Canal</div>
+        <div class="article-meta-value">
+          
+          <svg class="icon icon-note article-meta-icon"><use xlink:href="assets/images/icons.svg#icon-note"></use></svg>
+          nota
+          <div class="article-meta-links">
+          
+            
+            
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="js-article-actions"><div class="article-content article-actions horizontal">
+  
+</div>
+</div>
+
+<a href="https://https//ticket.crescer.net//#ticket/zoom/8413/28329"><small class="task-subline"><time class="humanTimeFromNow " datetime="2024-01-10T14:08:23.158Z" title="10/01/2024 11:08">10/01/2024</time></small></a>
+</div><div class="ticket-article-item system" data-id="28330" id="article-28330">
+
+
+<div class="article-meta-clip top">
+  <div class="article-content-meta top hide">
+    <div class="article-meta top">
+    
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key u-textTruncate">De</div>
+        <div class="article-meta-value flex contain-text">- </div>
+      </div>
+    
+    
+    
+    
+    
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key u-textTruncate">Assunto</div>
+        <div class="article-meta-value flex contain-text">Encerramento automático</div>
+      </div>
+    
+      
+    </div>
+  </div>
+</div>
+
+<div class="article-content">
+  
+  
+  
+  <div class="js-avatar"><span class="avatar " style="background: white">
+  <svg class="icon icon-logo "><use xlink:href="assets/images/icons.svg#icon-logo"></use></svg>
+</span>
+</div>
+  <div class="bubble-gap">
+    <div class="internal-border">
+      <div class="textBubble">
+        <div class="bubble-arrow"></div>
+        <div class="textBubble-content" id="article-content-28330" data-id="28330">
+          <div class="richtext-content" dir="auto">Este ticket fechará automaticamente em 10 dias caso não seja retornado.</div>
+          <div class="textBubble-overflowContainer hide">
+            <div class="btn btn--text js-toggleFold">Ver mais</div>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="article-meta-clip bottom">
+  <div class="article-content-meta bottom hide">
+    <div class="article-meta bottom">
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key">Canal</div>
+        <div class="article-meta-value">
+          
+          <svg class="icon icon-note article-meta-icon"><use xlink:href="assets/images/icons.svg#icon-note"></use></svg>
+          nota
+          <div class="article-meta-links">
+          
+            
+            
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="js-article-actions"><div class="article-content article-actions horizontal">
+  
+</div>
+</div>
+
+<a href="https://https//ticket.crescer.net//#ticket/zoom/8413/28330"><small class="task-subline"><time class="humanTimeFromNow " datetime="2024-01-10T14:08:23.913Z" title="10/01/2024 11:08">10/01/2024</time></small></a>
+</div><div class="ticket-article-item customer" data-id="28471" id="article-28471">
+
+
+<div class="article-meta-clip top">
+  <div class="article-content-meta top hide">
+    <div class="article-meta top">
+    
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key u-textTruncate">De</div>
+        <div class="article-meta-value flex contain-text">Jean costa  <span class="text-muted">&lt;jean.costa@vivver.com.br&gt;</span></div>
+      </div>
+    
+    
+    
+    
+    
+      
+    </div>
+  </div>
+</div>
+
+<div class="article-content">
+  
+  
+  
+  <div class="js-avatar"><span class="avatar size-40 user-popover user-popover avatar--unique" style="background-position: -230.92135384537596px -181.03559744573184px;" data-id="38">
+  
+  Jc
+</span>
+</div>
+  <div class="bubble-gap">
+    <div class="internal-border">
+      <div class="textBubble">
+        <div class="bubble-arrow"></div>
+        <div class="textBubble-content" id="article-content-28471" data-id="28471">
+          <div class="richtext-content" dir="auto">Bom dia!<br><br>Em validação.</div>
+          <div class="textBubble-overflowContainer hide">
+            <div class="btn btn--text js-toggleFold">Ver mais</div>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="article-meta-clip bottom">
+  <div class="article-content-meta bottom hide">
+    <div class="article-meta bottom">
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key">Canal</div>
+        <div class="article-meta-value">
+          
+          <svg class="icon icon-web article-meta-icon"><use xlink:href="assets/images/icons.svg#icon-web"></use></svg>
+          web
+          <div class="article-meta-links">
+          
+            
+            
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="js-article-actions"><div class="article-content article-actions horizontal">
+  
+</div>
+</div>
+
+<a href="https://https//ticket.crescer.net//#ticket/zoom/8413/28471"><small class="task-subline"><time class="humanTimeFromNow " datetime="2024-01-12T11:26:01.022Z" title="12/01/2024 08:26">12/01/2024</time></small></a>
+</div><div class="ticket-article-item system" data-id="28472" id="article-28472">
+
+
+<div class="article-meta-clip top">
+  <div class="article-content-meta top hide">
+    <div class="article-meta top">
+    
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key u-textTruncate">De</div>
+        <div class="article-meta-value flex contain-text">- </div>
+      </div>
+    
+    
+    
+    
+    
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key u-textTruncate">Assunto</div>
+        <div class="article-meta-value flex contain-text">Encerramento automático</div>
+      </div>
+    
+      
+    </div>
+  </div>
+</div>
+
+<div class="article-content">
+  
+  
+  
+  <div class="js-avatar"><span class="avatar " style="background: white">
+  <svg class="icon icon-logo "><use xlink:href="assets/images/icons.svg#icon-logo"></use></svg>
+</span>
+</div>
+  <div class="bubble-gap">
+    <div class="internal-border">
+      <div class="textBubble">
+        <div class="bubble-arrow"></div>
+        <div class="textBubble-content" id="article-content-28472" data-id="28472">
+          <div class="richtext-content" dir="auto">Este ticket fechará automaticamente em 10 dias caso não seja retornado.</div>
+          <div class="textBubble-overflowContainer hide">
+            <div class="btn btn--text js-toggleFold">Ver mais</div>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="article-meta-clip bottom">
+  <div class="article-content-meta bottom hide">
+    <div class="article-meta bottom">
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key">Canal</div>
+        <div class="article-meta-value">
+          
+          <svg class="icon icon-note article-meta-icon"><use xlink:href="assets/images/icons.svg#icon-note"></use></svg>
+          nota
+          <div class="article-meta-links">
+          
+            
+            
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="js-article-actions"><div class="article-content article-actions horizontal">
+  
+</div>
+</div>
+
+<a href="https://https//ticket.crescer.net//#ticket/zoom/8413/28472"><small class="task-subline"><time class="humanTimeFromNow " datetime="2024-01-12T11:26:02.267Z" title="12/01/2024 08:26">12/01/2024</time></small></a>
+</div><div class="ticket-article-item customer" data-id="28509" id="article-28509">
+
+
+<div class="article-meta-clip top">
+  <div class="article-content-meta top hide">
+    <div class="article-meta top">
+    
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key u-textTruncate">De</div>
+        <div class="article-meta-value flex contain-text">Jean costa  <span class="text-muted">&lt;jean.costa@vivver.com.br&gt;</span></div>
+      </div>
+    
+    
+    
+    
+    
+      
+    </div>
+  </div>
+</div>
+
+<div class="article-content">
+  
+  
+  
+  <div class="js-avatar"><span class="avatar size-40 user-popover user-popover avatar--unique" style="background-position: -230.92135384537596px -181.03559744573184px;" data-id="38">
+  
+  Jc
+</span>
+</div>
+  <div class="bubble-gap">
+    <div class="internal-border">
+      <div class="textBubble">
+        <div class="bubble-arrow"></div>
+        <div class="textBubble-content" id="article-content-28509" data-id="28509" data-height="1517.38" data-height-origin="560" style="height: 560px;">
+          <div class="richtext-content" dir="auto"><div>[POUSO ALEGRE][IMUNIZAÇÃO][REGISTRO NO CARTÃO] - ESTRATEGIA "CAMPANHA SELETIVA" PARA AS VACINAS DE COVID</div><div>Município: Pouso Alegre-MG</div><div>Módulo: IMUNIZAÇÃO</div><div>Versão: v23.12.04</div><div>Caminho: Imunização/Registro no cartão</div><div>Tipo: Incidente</div><div>Prioridade: Urgente</div><div><br></div><div>Descrição:</div><div>Ao registrar as vacinas de COVID, nota-se que a estratégia carregada é "CAMPANHA", mas, ao verificar no site <a href="https://integracao.esusab.ufsc.br/ledi/documentacao/regras/validar_regras_vacinacao.html" title="https://integracao.esusab.ufsc.br/ledi/documentacao/regras/validar_regras_vacinacao.html" rel="nofollow noreferrer noopener" target="_blank">https://integracao.esusab.ufsc.br/ledi/documentacao/regras/validar_regras_vacinacao.html</a>, constatamos que a estratégia correta seria "CAMPANHA SELETIVA".</div><div>Sendo assim, solicita-se a carga correta da estratégia vacinal para todas as vacinas de COVID.</div><div><br></div><div>Imagens em anexo.</div><div><br></div><div>A demanda é importante, pois o município recebeu o material de como fazer o lançamento nos sistemas próprios e está cobrando a parametrização.</div><div>Qualquer dúvida estamos à disposição.</div><div>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="./Crescer Tecnologia - #108346 - [Nova Lima-MG][Imunização] - Parametrização de imunos_estrategia._files/image1(1).jpeg"><br>
+</div><div>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="./Crescer Tecnologia - #108346 - [Nova Lima-MG][Imunização] - Parametrização de imunos_estrategia._files/image2.jpeg"><br>
+</div><div>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="./Crescer Tecnologia - #108346 - [Nova Lima-MG][Imunização] - Parametrização de imunos_estrategia._files/image3.jpeg"><br>
+</div><div>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="./Crescer Tecnologia - #108346 - [Nova Lima-MG][Imunização] - Parametrização de imunos_estrategia._files/image4.jpeg"><br>
+</div></div>
+          <div class="textBubble-overflowContainer">
+            <div class="btn btn--text js-toggleFold">Ver mais</div>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="article-meta-clip bottom">
+  <div class="article-content-meta bottom hide">
+    <div class="article-meta bottom">
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key">Canal</div>
+        <div class="article-meta-value">
+          
+          <svg class="icon icon-web article-meta-icon"><use xlink:href="assets/images/icons.svg#icon-web"></use></svg>
+          web
+          <div class="article-meta-links">
+          
+            
+            
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="js-article-actions"><div class="article-content article-actions horizontal">
+  
+</div>
+</div>
+
+<a href="https://https//ticket.crescer.net//#ticket/zoom/8413/28509"><small class="task-subline"><time class="humanTimeFromNow " datetime="2024-01-12T18:33:56.602Z" title="12/01/2024 15:33">12/01/2024</time></small></a>
+</div><div class="ticket-article-item system" data-id="28510" id="article-28510">
+
+
+<div class="article-meta-clip top">
+  <div class="article-content-meta top hide">
+    <div class="article-meta top">
+    
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key u-textTruncate">De</div>
+        <div class="article-meta-value flex contain-text">- </div>
+      </div>
+    
+    
+    
+    
+    
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key u-textTruncate">Assunto</div>
+        <div class="article-meta-value flex contain-text">Encerramento automático</div>
+      </div>
+    
+      
+    </div>
+  </div>
+</div>
+
+<div class="article-content">
+  
+  
+  
+  <div class="js-avatar"><span class="avatar " style="background: white">
+  <svg class="icon icon-logo "><use xlink:href="assets/images/icons.svg#icon-logo"></use></svg>
+</span>
+</div>
+  <div class="bubble-gap">
+    <div class="internal-border">
+      <div class="textBubble">
+        <div class="bubble-arrow"></div>
+        <div class="textBubble-content" id="article-content-28510" data-id="28510">
+          <div class="richtext-content" dir="auto">Este ticket fechará automaticamente em 10 dias caso não seja retornado.</div>
+          <div class="textBubble-overflowContainer hide">
+            <div class="btn btn--text js-toggleFold">Ver mais</div>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="article-meta-clip bottom">
+  <div class="article-content-meta bottom hide">
+    <div class="article-meta bottom">
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key">Canal</div>
+        <div class="article-meta-value">
+          
+          <svg class="icon icon-note article-meta-icon"><use xlink:href="assets/images/icons.svg#icon-note"></use></svg>
+          nota
+          <div class="article-meta-links">
+          
+            
+            
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="js-article-actions"><div class="article-content article-actions horizontal">
+  
+</div>
+</div>
+
+<a href="https://https//ticket.crescer.net//#ticket/zoom/8413/28510"><small class="task-subline"><time class="humanTimeFromNow " datetime="2024-01-12T18:34:10.403Z" title="12/01/2024 15:34">12/01/2024</time></small></a>
+</div><div class="ticket-article-item customer" data-id="28514" id="article-28514">
+
+
+<div class="article-meta-clip top">
+  <div class="article-content-meta top hide">
+    <div class="article-meta top">
+    
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key u-textTruncate">De</div>
+        <div class="article-meta-value flex contain-text">Jean costa  <span class="text-muted">&lt;jean.costa@vivver.com.br&gt;</span></div>
+      </div>
+    
+    
+    
+    
+    
+      
+    </div>
+  </div>
+</div>
+
+<div class="article-content">
+  
+  
+  
+  <div class="js-avatar"><span class="avatar size-40 user-popover user-popover avatar--unique" style="background-position: -230.92135384537596px -181.03559744573184px;" data-id="38">
+  
+  Jc
+</span>
+</div>
+  <div class="bubble-gap">
+    <div class="internal-border">
+      <div class="textBubble">
+        <div class="bubble-arrow"></div>
+        <div class="textBubble-content" id="article-content-28514" data-id="28514">
+          <div class="richtext-content" dir="auto">Boa tarde!<br><br><div>Teste realizado e aparece na estrategia somente "campanha indiscriminada".&nbsp;</div><div><br></div><div>
+<a href="https://integracao.esusab.ufsc.br/ledi/documentacao/regras/validar_regras_vacinacao.html" title="https://integracao.esusab.ufsc.br/ledi/documentacao/regras/validar_regras_vacinacao.html" rel="nofollow noreferrer noopener" target="_blank">https://integracao.esusab.ufsc.br/ledi/documentacao/regras/validar_regras_vacinacao.html</a><br>
+</div><div>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="./Crescer Tecnologia - #108346 - [Nova Lima-MG][Imunização] - Parametrização de imunos_estrategia._files/image1(2).jpeg"><div>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="./Crescer Tecnologia - #108346 - [Nova Lima-MG][Imunização] - Parametrização de imunos_estrategia._files/image2(1).jpeg"><br>
+</div>
+</div></div>
+          <div class="textBubble-overflowContainer hide">
+            <div class="btn btn--text js-toggleFold">Ver mais</div>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="article-meta-clip bottom">
+  <div class="article-content-meta bottom hide">
+    <div class="article-meta bottom">
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key">Canal</div>
+        <div class="article-meta-value">
+          
+          <svg class="icon icon-web article-meta-icon"><use xlink:href="assets/images/icons.svg#icon-web"></use></svg>
+          web
+          <div class="article-meta-links">
+          
+            
+            
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="js-article-actions"><div class="article-content article-actions horizontal">
+  
+</div>
+</div>
+
+<a href="https://https//ticket.crescer.net//#ticket/zoom/8413/28514"><small class="task-subline"><time class="humanTimeFromNow " datetime="2024-01-12T19:07:44.758Z" title="12/01/2024 16:07">12/01/2024</time></small></a>
+</div><div class="ticket-article-item customer" data-id="28949" id="article-28949">
+
+
+<div class="article-meta-clip top">
+  <div class="article-content-meta top hide">
+    <div class="article-meta top">
+    
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key u-textTruncate">De</div>
+        <div class="article-meta-value flex contain-text">Jean costa  <span class="text-muted">&lt;jean.costa@vivver.com.br&gt;</span></div>
+      </div>
+    
+    
+    
+    
+    
+      
+    </div>
+  </div>
+</div>
+
+<div class="article-content">
+  
+  
+  
+  <div class="js-avatar"><span class="avatar size-40 user-popover user-popover avatar--unique" style="background-position: -230.92135384537596px -181.03559744573184px;" data-id="38">
+  
+  Jc
+</span>
+</div>
+  <div class="bubble-gap">
+    <div class="internal-border">
+      <div class="textBubble">
+        <div class="bubble-arrow"></div>
+        <div class="textBubble-content" id="article-content-28949" data-id="28949" data-height="1023.25" data-height-origin="560" style="height: 560px;">
+          <div class="richtext-content" dir="auto"><div>[POUSO ALEGRE][IMUNIZAÇÃO][REGISTRO NO CARTÃO] - ESTRATEGIA "CAMPANHA SELETIVA" PARA AS VACINAS DE COVID</div><div>Município: Pouso Alegre-MG</div><div>Módulo: IMUNIZAÇÃO</div><div>Versão: v23.12.04</div><div>Caminho: Imunização/Registro no cartão</div><div>Tipo: Incidente</div><div>Prioridade: Urgente</div><div><br></div><div>Descrição:</div><div>Após a abertura do chamado PALEGRE37370, a CAMPANHA SELETIVA foi habilitada conforme a solicitação. No XML da ficha de vacinação, a estratégia CAMPANHA SELETIVA está com a numeração 11, o que difere das regras do site <a href="https://integracao.esusab.ufsc.br/" title="https://integracao.esusab.ufsc.br/" rel="nofollow noreferrer noopener" target="_blank">https://integracao.esusab.ufsc.br/</a>. A campanha seletiva deveria ter a numeração 6 no XML, e não 11 como o atual. Acreditamos que essa diferença possa dar inconsistências nas fichas lançadas para essa estrategia.</div><div><br></div><div>UUID da ficha para teste 2992698-757b4a6c-d666-4a76-b807-ca4ac121d055</div><div><br></div><div>IMAGENS DO CORRIDO EM ANEXO.</div><div><br></div><div>atenciosamente,</div><div>Jonatan silva</div><div>Contato: 31 99712-1851</div><div>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="./Crescer Tecnologia - #108346 - [Nova Lima-MG][Imunização] - Parametrização de imunos_estrategia._files/image1(3).jpeg"><br>
+</div><div>
+<div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="./Crescer Tecnologia - #108346 - [Nova Lima-MG][Imunização] - Parametrização de imunos_estrategia._files/image2(2).jpeg">
+</div>
+<br>
+</div></div>
+          <div class="textBubble-overflowContainer">
+            <div class="btn btn--text js-toggleFold">Ver mais</div>
+          </div>
+        </div>
+        
+  <div class="attachments attachments--list">
+    <svg class="icon icon-paperclip "><use xlink:href="assets/images/icons.svg#icon-paperclip"></use></svg>
+    <div class="attachments-title">1 Arquivo(s) Anexado</div>
+    
+      
+        
+        <a class="attachment attachment--preview " href="https://ticket.crescer.net/api/v1/ticket_attachment/8413/28949/18067?disposition=attachment" data-type="attachment" data-preview-url="api/v1/ticket_attachment/8413/28949/18067?view=preview" data-id="18067" download="">
+          <div class="attachment-icon js-preview">
+          
+            <svg class="icon icon-file-unknown "><use xlink:href="assets/images/icons.svg#icon-file-unknown"></use></svg>
+          
+          </div>
+          <div class="attachment-text">
+            <span class="attachment-name u-highlight">lotefichavacinacao-19-01-2024.zip</span>
+            <div class="attachment-size">1 KB</div>
+          </div>
+          
+        </a>
+      
+    
+  </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="article-meta-clip bottom">
+  <div class="article-content-meta bottom hide">
+    <div class="article-meta bottom">
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key">Canal</div>
+        <div class="article-meta-value">
+          
+          <svg class="icon icon-web article-meta-icon"><use xlink:href="assets/images/icons.svg#icon-web"></use></svg>
+          web
+          <div class="article-meta-links">
+          
+            
+            
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="js-article-actions"><div class="article-content article-actions horizontal">
+  
+</div>
+</div>
+
+<a href="https://https//ticket.crescer.net//#ticket/zoom/8413/28949"><small class="task-subline"><time class="humanTimeFromNow " datetime="2024-01-29T12:25:33.424Z" title="29/01/2024 09:25">4 dias 2 horas atrás</time></small></a>
+</div><div class="ticket-article-item agent" data-id="29183" id="article-29183">
+
+
+<div class="article-meta-clip top">
+  <div class="article-content-meta top hide">
+    <div class="article-meta top">
+    
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key u-textTruncate">De</div>
+        <div class="article-meta-value flex contain-text">Filipe Carneiro</div>
+      </div>
+    
+    
+    
+    
+    
+      
+    </div>
+  </div>
+</div>
+
+<div class="article-content">
+  
+  
+  
+  <div class="js-avatar"><span class="avatar size-40 user-popover user-popover" style="background-image: url(api/v1/users/image/c88a5b3fa5607d83082d5a39b53fb488)" data-id="33" data-initials="FC">
+  
+</span>
+</div>
+  <div class="bubble-gap">
+    <div class="internal-border">
+      <div class="textBubble">
+        <div class="bubble-arrow"></div>
+        <div class="textBubble-content" id="article-content-29183" data-id="29183">
+          <div class="richtext-content" dir="auto">A ficha citada no último comentário desta demanda não foi encontrada. O paciente referido possui uma aplicação do imuno de covid no dia 19/01/2024 mas não encontramos a ficha e-sus. <br>Em testes realizados o xml foi gerado com a estratégia 6. <br>Favor verificar outro caso e relatar.<br><br></div>
+          <div class="textBubble-overflowContainer hide">
+            <div class="btn btn--text js-toggleFold">Ver mais</div>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="article-meta-clip bottom">
+  <div class="article-content-meta bottom hide">
+    <div class="article-meta bottom">
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key">Canal</div>
+        <div class="article-meta-value">
+          
+          <svg class="icon icon-note article-meta-icon"><use xlink:href="assets/images/icons.svg#icon-note"></use></svg>
+          nota
+          <div class="article-meta-links">
+          
+            
+            
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="js-article-actions"><div class="article-content article-actions horizontal">
+  
+</div>
+</div>
+
+<a href="https://https//ticket.crescer.net//#ticket/zoom/8413/29183"><small class="task-subline"><time class="humanTimeFromNow " datetime="2024-02-02T12:59:47.136Z" title="02/02/2024 09:59">2 horas 5 minutos atrás</time></small></a>
+</div><div class="ticket-article-item system" data-id="29184" id="article-29184">
+
+
+<div class="article-meta-clip top">
+  <div class="article-content-meta top hide">
+    <div class="article-meta top">
+    
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key u-textTruncate">De</div>
+        <div class="article-meta-value flex contain-text">- </div>
+      </div>
+    
+    
+    
+    
+    
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key u-textTruncate">Assunto</div>
+        <div class="article-meta-value flex contain-text">Encerramento automático</div>
+      </div>
+    
+      
+    </div>
+  </div>
+</div>
+
+<div class="article-content">
+  
+  
+  
+  <div class="js-avatar"><span class="avatar " style="background: white">
+  <svg class="icon icon-logo "><use xlink:href="assets/images/icons.svg#icon-logo"></use></svg>
+</span>
+</div>
+  <div class="bubble-gap">
+    <div class="internal-border">
+      <div class="textBubble">
+        <div class="bubble-arrow"></div>
+        <div class="textBubble-content" id="article-content-29184" data-id="29184">
+          <div class="richtext-content" dir="auto">Este ticket fechará automaticamente em 10 dias caso não seja retornado.</div>
+          <div class="textBubble-overflowContainer hide">
+            <div class="btn btn--text js-toggleFold">Ver mais</div>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="article-meta-clip bottom">
+  <div class="article-content-meta bottom hide">
+    <div class="article-meta bottom">
+      <div class="horizontal article-meta-row">
+        <div class="article-meta-key">Canal</div>
+        <div class="article-meta-value">
+          
+          <svg class="icon icon-note article-meta-icon"><use xlink:href="assets/images/icons.svg#icon-note"></use></svg>
+          nota
+          <div class="article-meta-links">
+          
+            
+            
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="js-article-actions"><div class="article-content article-actions horizontal">
+  
+</div>
+</div>
+
+<a href="https://https//ticket.crescer.net//#ticket/zoom/8413/29184"><small class="task-subline"><time class="humanTimeFromNow " datetime="2024-02-02T12:59:48.371Z" title="02/02/2024 09:59">2 horas 5 minutos atrás</time></small></a>
+</div></div>
+      <div class="article-new">
+<form class="article-add is-public" data-type="note">
+  <input type="hidden" name="type" value="note">
+  <input type="hidden" name="internal" value="">
+  <input type="hidden" name="form_id" value="132496567">
+  <input type="hidden" name="shared_draft_id" value="">
+  <input type="hidden" name="subtype" value="">
+  <input type="hidden" name="in_reply_to" value="">
+  <div class="editControls">
+    <div class="js-avatar"><span class="avatar size-40 user-popover user-popover avatar--unique" style="background-position: -159.15242143037358px -141.6044594174726px;" data-placement="right" data-id="39">
+  
+  CV
+</span>
+</div>
+    <div class="editControls-item is-hidden pop-select">
+      
+    </div>
+    
+  </div>
+  <div class="article-content bubble-gap">
+    <div class="internal-border">
+      <div class="input form-group hide">
+        <div class="formGroup-label">
+          <label for="1706886257465129-tokenfield">Para</label>
+        </div>
+        <div class="controls"><div class="tokenfield form-control"><input type="text" name="to" value="" class="form-control js-mail-inputs js-to" required="required" tabindex="-1" style="position: absolute; left: -10000px;"><input type="text" tabindex="-1" style="position: absolute; left: -10000px;"><input type="text" class="token-input ui-autocomplete-input" autocomplete="off" placeholder="" id="1706886257465129-tokenfield" tabindex="0" style="min-width: 60px; width: 0px;"></div></div>
+      </div>
+      <div class="input form-group hide">
+        <div class="formGroup-label">
+          <label for="1706886257465129-tokenfield">CC</label>
+        </div>
+        <div class="controls"><div class="tokenfield form-control"><input type="text" name="cc" value="" class="form-control js-mail-inputs js-cc" tabindex="-1" style="position: absolute; left: -10000px;"><input type="text" tabindex="-1" style="position: absolute; left: -10000px;"><input type="text" class="token-input ui-autocomplete-input" autocomplete="off" placeholder="" id="1706886257474136-tokenfield" tabindex="0" style="min-width: 60px; width: 0px;"></div></div>
+      </div>
+      <div class="input form-group hide">
+        <div class="formGroup-label">
+          <label for="1706886257465129-tokenfield">Assunto</label>
+        </div>
+        <div class="controls"><input type="text" name="subject" value="" class="form-control js-mail-inputs2 js-subject"></div>
+      </div>
+      <div class="form-group js-securityOptions hide">
+        <div class="formGroup-label">
+          <label for="1706886257465129-tokenfield">Segurança</label>
+        </div>
+        <div class="horizontal">
+          <div class="btn btn--action btn--split--first js-active-toggle-type js-securityType" data-type="PGP">PGP</div>
+          <div class="btn btn--action btn--split--last js-active-toggle-type js-securityType" data-type="S/MIME">S/MIME</div>
+          <div class="spacer js-securityType"></div>
+          <span class="js-securityEncryptComment">
+            <div class="btn btn--action btn--split--first js-securityEncrypt js-active-toggle" disabled=""><svg class="icon icon-lock-open btn-inactive-icon"><use xlink:href="assets/images/icons.svg#icon-lock-open"></use></svg><svg class="icon icon-lock btn-active-icon"><use xlink:href="assets/images/icons.svg#icon-lock"></use></svg>Criptografar</div>
+          </span>
+          <span class="js-securitySignComment">
+            <div class="btn btn--action btn--split--last js-securitySign js-active-toggle" disabled=""><svg class="icon icon-not-signed btn-inactive-icon"><use xlink:href="assets/images/icons.svg#icon-not-signed"></use></svg><svg class="icon icon-signed btn-active-icon"><use xlink:href="assets/images/icons.svg#icon-signed"></use></svg>Entrar</div>
+          </span>
+        </div>
+      </div>
+
+      <div class="textBubble js-writeArea">
+        <div class="bubble-arrow"></div>
+        <div class="js-textarea richtext-content articleNewEdit-body" dir="auto" contenteditable="true" data-name="body"></div>
+        <!-- .textBubble grows with textarea (and expanding clone) -->
+        <div class="textBubble-footer js-textSizeLimit hide">
+          <div class="textBubble-signatur"><span class="js-signature"></span></div>
+          <div class="textBubble-letterCount js-letterCount"></div>
+        </div>
+        <div class="attachments"></div>
+        <div class="article-attachment">
+          <div class="attachmentPlaceholder">
+            <span class="attachmentPlaceholder-hint">Escrever anotação ou</span>
+            <span class="attachmentPlaceholder-inputHolder fileUpload">
+              
+              <input multiple="multiple" type="file" name="file" id="fileUpload_11" data-initialized="true">
+              <label class="attachmentPlaceholder-label" for="fileUpload_11">
+                selecionar anexo…
+              </label>
+            </span>
+          </div>
+          <div class="attachmentUpload hide">
+            <div class="horizontal">
+              <div class="u-highlight">
+                Enviando (<span class="js-percentage">0</span>%) ...
+              </div>
+              <div class="attachmentUpload-cancel js-cancel">
+                <svg class="icon icon-diagonal-cross "><use xlink:href="assets/images/icons.svg#icon-diagonal-cross"></use></svg>Cancelar upload
+              </div>
+            </div>
+            <div class="attachmentUpload-progressBar" style="width: 0%"></div>
+          </div>
+        </div>
+        <div class="dropArea">
+          <div class="dropArea-inner">
+            Arraste os arquivos aqui
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+</div>
+    </div>
+  </div>
+
+  <div class="tabsSidebar tabsSidebar--attributeBarSpacer vertical"><div class="sidebar bottom-form-shadow flex" data-tab="ticket">
+  <div class="sidebar-header">
+    <h2 class="sidebar-header-headline js-headline">Tíquete</h2>
+    <div class="sidebar-header-actions js-actions"></div>
+    <div class="tabsSidebar-close">
+      <svg class="icon icon-long-arrow-right "><use xlink:href="assets/images/icons.svg#icon-long-arrow-right"></use></svg>
+    </div>
+  </div>
+  <hr>
+  <div class="sidebar-content"><form>
+  <fieldset class="edit" data-ticket-updated-at="2024-02-02T12:59:48.588Z"><fieldset><div class="alert alert--success js-success hide" role="alert"></div><div class="alert alert--danger js-danger js-alert hide" role="alert"></div><div data-attribute-name="state_id" class="select form-group">
+  
+  <div class="formGroup-label">
+    
+    <label for="Ticket_698383_state_id">
+      
+      Estado
+      <span></span>
+    </label>
+    
+    
+    
+    
+  </div>
+  
+  <div class="controls "><div class="controls controls--select">
+  <select id="Ticket_698383_state_id" class="form-control" name="state_id">
+    
+      
+        <option value="2">aberto</option>
+      
+        <option value="4">fechado</option>
+      
+        <option value="10" selected="">Feedback</option>
+      
+    
+  </select>
+  
+    <svg class="icon icon-arrow-down "><use xlink:href="assets/images/icons.svg#icon-arrow-down"></use></svg>
+  
+</div>
+    
+    <span class="help-inline"></span>
+    
+    <span class="help-block"></span>
+    
+  </div>
+</div><div data-attribute-name="cliente" class="select form-group">
+  
+  <div class="formGroup-label">
+    
+    <label for="Ticket_698383_cliente">
+      
+      Cliente
+      <span></span>
+    </label>
+    
+    
+    
+    
+  </div>
+  
+  <div class="controls "><div class="controls controls--select">
+  <select id="Ticket_698383_cliente" class="form-control" name="cliente">
+    
+      
+        <option value="Abaete">Abaete</option>
+      
+        <option value="Alfenas">Alfenas</option>
+      
+        <option value="APAE - Mantena">APAE - Mantena</option>
+      
+        <option value="Arcos">Arcos</option>
+      
+        <option value="Atibaia-SP">Atibaia-SP</option>
+      
+        <option value="Berizal">Berizal</option>
+      
+        <option value="Bocaiúva">Bocaiúva</option>
+      
+        <option value="Bonito de Minas">Bonito de Minas</option>
+      
+        <option value="Brasília de Minas">Brasília de Minas</option>
+      
+        <option value="Buritizeiro">Buritizeiro</option>
+      
+        <option value="Camanducaia">Camanducaia</option>
+      
+        <option value="Cambuí">Cambuí</option>
+      
+        <option value="Campanha">Campanha</option>
+      
+        <option value="Campo Belo">Campo Belo</option>
+      
+        <option value="Cantagalo">Cantagalo</option>
+      
+        <option value="Capitão Enéas">Capitão Enéas</option>
+      
+        <option value="Carai">Carai</option>
+      
+        <option value="Carangola">Carangola</option>
+      
+        <option value="Carmo do Cajuru">Carmo do Cajuru</option>
+      
+        <option value="Carmo do Paranaiba">Carmo do Paranaiba</option>
+      
+        <option value="Cassia">Cassia</option>
+      
+        <option value="Cataguases">Cataguases</option>
+      
+        <option value="CISLESTE">CISLESTE</option>
+      
+        <option value="CISMESF">CISMESF</option>
+      
+        <option value="CISMIV">CISMIV</option>
+      
+        <option value="CISSM">CISSM</option>
+      
+        <option value="Claraval">Claraval</option>
+      
+        <option value="Comendador Levy Gasparian">Comendador Levy Gasparian</option>
+      
+        <option value="Conceição do Mato Dentro">Conceição do Mato Dentro</option>
+      
+        <option value="Cônego Marinho">Cônego Marinho</option>
+      
+        <option value="Congonhas">Congonhas</option>
+      
+        <option value="Contagem">Contagem</option>
+      
+        <option value="Coração de Jesus">Coração de Jesus</option>
+      
+        <option value="Corinto">Corinto</option>
+      
+        <option value="Coronel Pacheco">Coronel Pacheco</option>
+      
+        <option value="Crucilândia">Crucilândia</option>
+      
+        <option value="Diamantina">Diamantina</option>
+      
+        <option value="Fama">Fama</option>
+      
+        <option value="Ferros">Ferros</option>
+      
+        <option value="Florestal">Florestal</option>
+      
+        <option value="Francisco Sá">Francisco Sá</option>
+      
+        <option value="Fruta de Leite">Fruta de Leite</option>
+      
+        <option value="Frutal">Frutal</option>
+      
+        <option value="Goiana">Goiana</option>
+      
+        <option value="Governador Valadares">Governador Valadares</option>
+      
+        <option value="Guapé">Guapé</option>
+      
+        <option value="Icaraí de Minas">Icaraí de Minas</option>
+      
+        <option value="Igaratinga">Igaratinga</option>
+      
+        <option value="Itabira">Itabira</option>
+      
+        <option value="Itabirito">Itabirito</option>
+      
+        <option value="Itacarambi">Itacarambi</option>
+      
+        <option value="Itamarandiba">Itamarandiba</option>
+      
+        <option value="Itambacuri">Itambacuri</option>
+      
+        <option value="Itamonte">Itamonte</option>
+      
+        <option value="Itaú de Minas">Itaú de Minas</option>
+      
+        <option value="Itaúna">Itaúna</option>
+      
+        <option value="Ituiutaba">Ituiutaba</option>
+      
+        <option value="Jaboticabal-SP">Jaboticabal-SP</option>
+      
+        <option value="Jacutinga">Jacutinga</option>
+      
+        <option value="Janauba">Janauba</option>
+      
+        <option value="Januária">Januária</option>
+      
+        <option value="Japonvar">Japonvar</option>
+      
+        <option value="Jeceaba">Jeceaba</option>
+      
+        <option value="João Monlevade">João Monlevade</option>
+      
+        <option value="João Pessoa">João Pessoa</option>
+      
+        <option value="João Pinheiro">João Pinheiro</option>
+      
+        <option value="Josenópolis">Josenópolis</option>
+      
+        <option value="Lagoa da Prata">Lagoa da Prata</option>
+      
+        <option value="Lassance">Lassance</option>
+      
+        <option value="Leme-SP">Leme-SP</option>
+      
+        <option value="Leopoldina">Leopoldina</option>
+      
+        <option value="Lima Duarte">Lima Duarte</option>
+      
+        <option value="Luz">Luz</option>
+      
+        <option value="Machado">Machado</option>
+      
+        <option value="Manhuaçu">Manhuaçu</option>
+      
+        <option value="Mantena">Mantena</option>
+      
+        <option value="Maravilhas">Maravilhas</option>
+      
+        <option value="Mario Campos">Mario Campos</option>
+      
+        <option value="Matozinhos">Matozinhos</option>
+      
+        <option value="Mogi Mirim">Mogi Mirim</option>
+      
+        <option value="Monte Santo de Minas">Monte Santo de Minas</option>
+      
+        <option value="Monte Sião">Monte Sião</option>
+      
+        <option value="Montes Claros">Montes Claros</option>
+      
+        <option value="Munhoz">Munhoz</option>
+      
+        <option value="Muriae">Muriae</option>
+      
+        <option value="Mutum">Mutum</option>
+      
+        <option value="Nepomuceno">Nepomuceno</option>
+      
+        <option value="Nova Era">Nova Era</option>
+      
+        <option value="Nova Lima" selected="">Nova Lima</option>
+      
+        <option value="Nova Porteirinha">Nova Porteirinha</option>
+      
+        <option value="Novo">Novo</option>
+      
+        <option value="Novo Cruzeiro">Novo Cruzeiro</option>
+      
+        <option value="Olaria">Olaria</option>
+      
+        <option value="Olhos d Agua">Olhos d Agua</option>
+      
+        <option value="Oratórios">Oratórios</option>
+      
+        <option value="Orizânia">Orizânia</option>
+      
+        <option value="Ouro Branco">Ouro Branco</option>
+      
+        <option value="Paracatu">Paracatu</option>
+      
+        <option value="Paraguaçu">Paraguaçu</option>
+      
+        <option value="Passos">Passos</option>
+      
+        <option value="Patis">Patis</option>
+      
+        <option value="Patos de Minas">Patos de Minas</option>
+      
+        <option value="Peçanha">Peçanha</option>
+      
+        <option value="Pintopolis">Pintopolis</option>
+      
+        <option value="Pirapora">Pirapora</option>
+      
+        <option value="Pitangueiras-SP">Pitangueiras-SP</option>
+      
+        <option value="Piumhi">Piumhi</option>
+      
+        <option value="Poço Fundo">Poço Fundo</option>
+      
+        <option value="Pompéu">Pompéu</option>
+      
+        <option value="Ponto dos Volantes">Ponto dos Volantes</option>
+      
+        <option value="Pouso Alegre">Pouso Alegre</option>
+      
+        <option value="Rio Doce">Rio Doce</option>
+      
+        <option value="Rio Pardo de Minas">Rio Pardo de Minas</option>
+      
+        <option value="Salinas">Salinas</option>
+      
+        <option value="Santa Bárbara">Santa Bárbara</option>
+      
+        <option value="Santa Cruz do Escalvado">Santa Cruz do Escalvado</option>
+      
+        <option value="Santa Luzia">Santa Luzia</option>
+      
+        <option value="Santa Margarida">Santa Margarida</option>
+      
+        <option value="Santana do Pirapama">Santana do Pirapama</option>
+      
+        <option value="Santo Antônio do Monte">Santo Antônio do Monte</option>
+      
+        <option value="São Domingos da Prata">São Domingos da Prata</option>
+      
+        <option value="São Francisco do Gloria">São Francisco do Gloria</option>
+      
+        <option value="São Gotardo">São Gotardo</option>
+      
+        <option value="São João da Ponte">São João da Ponte</option>
+      
+        <option value="São João do Paraíso">São João do Paraíso</option>
+      
+        <option value="São João Nepomuceno">São João Nepomuceno</option>
+      
+        <option value="São Lourenço">São Lourenço</option>
+      
+        <option value="São Romão">São Romão</option>
+      
+        <option value="São Sebastião do Oeste">São Sebastião do Oeste</option>
+      
+        <option value="São Sebastião do Paraíso">São Sebastião do Paraíso</option>
+      
+        <option value="Sarzedo">Sarzedo</option>
+      
+        <option value="Serrania">Serrania</option>
+      
+        <option value="Sete Lagoas (ITS)">Sete Lagoas (ITS)</option>
+      
+        <option value="Simão Pereira">Simão Pereira</option>
+      
+        <option value="Sorocaba-SP">Sorocaba-SP</option>
+      
+        <option value="Taiobeiras">Taiobeiras</option>
+      
+        <option value="Timóteo">Timóteo</option>
+      
+        <option value="Todos">Todos</option>
+      
+        <option value="Ubaí">Ubaí</option>
+      
+        <option value="Urucânia">Urucânia</option>
+      
+        <option value="Várzea da Palma">Várzea da Palma</option>
+      
+        <option value="Vieiras">Vieiras</option>
+      
+        <option value="Volta Redonda-RJ">Volta Redonda-RJ</option>
+      
+    
+  </select>
+  
+    <svg class="icon icon-arrow-down "><use xlink:href="assets/images/icons.svg#icon-arrow-down"></use></svg>
+  
+</div>
+    
+    <span class="help-inline"></span>
+    
+    <span class="help-block"></span>
+    
+  </div>
+</div><div data-attribute-name="tipo" class="select form-group">
+  
+  <div class="formGroup-label">
+    
+    <label for="Ticket_698383_tipo">
+      
+      Tipo do chamado
+      <span></span>
+    </label>
+    
+    
+    
+    
+  </div>
+  
+  <div class="controls "><div class="controls controls--select">
+  <select id="Ticket_698383_tipo" class="form-control" name="tipo">
+    
+      
+        <option value="">-</option>
+      
+        <option value="Atualização">Atualização</option>
+      
+        <option value="Criação de ambiente">Criação de ambiente</option>
+      
+        <option value="Dúvidas">Dúvidas</option>
+      
+        <option value="Email">Email</option>
+      
+        <option value="Erro">Erro</option>
+      
+        <option value="Lentidão/Queda">Lentidão/Queda</option>
+      
+        <option value="Licitação">Licitação</option>
+      
+        <option value="Melhoria">Melhoria</option>
+      
+        <option value="Notificação">Notificação</option>
+      
+        <option value="Pedido de Serviço" selected="">Pedido de Serviço</option>
+      
+        <option value="Produção">Produção</option>
+      
+        <option value="Reunião Externa">Reunião Externa</option>
+      
+        <option value="Treinamento/Capacitação">Treinamento/Capacitação</option>
+      
+    
+  </select>
+  
+    <svg class="icon icon-arrow-down "><use xlink:href="assets/images/icons.svg#icon-arrow-down"></use></svg>
+  
+</div>
+    
+    <span class="help-inline"></span>
+    
+    <span class="help-block"></span>
+    
+  </div>
+</div><div data-attribute-name="aplicacao" class="select form-group">
+  
+  <div class="formGroup-label">
+    
+    <label for="Ticket_698383_aplicacao">
+      
+      Aplicação
+      <span></span>
+    </label>
+    
+    
+    
+    
+  </div>
+  
+  <div class="controls "><div class="controls controls--select">
+  <select id="Ticket_698383_aplicacao" class="form-control" name="aplicacao">
+    
+      
+        <option value="">-</option>
+      
+        <option value="Educação">Educação</option>
+      
+        <option value="Saúde - APP ESF">Saúde - APP ESF</option>
+      
+        <option value="Saúde - DELPHI">Saúde - DELPHI</option>
+      
+        <option value="Saúde - Todos">Saúde - Todos</option>
+      
+        <option value="Saúde - WEB" selected="">Saúde - WEB</option>
+      
+    
+  </select>
+  
+    <svg class="icon icon-arrow-down "><use xlink:href="assets/images/icons.svg#icon-arrow-down"></use></svg>
+  
+</div>
+    
+    <span class="help-inline"></span>
+    
+    <span class="help-block"></span>
+    
+  </div>
+</div><div data-attribute-name="versao" class="input form-group is-hidden is-removed hide">
+  
+  <div class="formGroup-label">
+    
+    <label for="Ticket_698383_versao">
+      
+      Versão da aplicação
+      <span></span>
+    </label>
+    
+    
+    
+    
+  </div>
+  
+  <div class="controls "><input id="Ticket_698383_versao" type="text" name="versao" value="23.12.04" class="form-control " autocomplete="off" maxlength="120">
+    
+    <span class="help-inline"></span>
+    
+    <span class="help-block"></span>
+    
+  </div>
+</div><div data-attribute-name="modulosaud" class="select form-group">
+  
+  <div class="formGroup-label">
+    
+    <label for="Ticket_698383_modulosaud">
+      
+      Módulo saúde
+      <span></span>
+    </label>
+    
+    
+    
+    
+  </div>
+  
+  <div class="controls "><div class="controls controls--select">
+  <select id="Ticket_698383_modulosaud" class="form-control" name="modulosaud">
+    
+      
+        <option value="">-</option>
+      
+        <option value="Administração">Administração</option>
+      
+        <option value="Almoxarifado/Farmácia">Almoxarifado/Farmácia</option>
+      
+        <option value="Ambulatório">Ambulatório</option>
+      
+        <option value="B.I">B.I</option>
+      
+        <option value="Controle de Endemias">Controle de Endemias</option>
+      
+        <option value="Endereçamento">Endereçamento</option>
+      
+        <option value="Faturamento - Produção">Faturamento - Produção</option>
+      
+        <option value="Frotas">Frotas</option>
+      
+        <option value="Imunização" selected="">Imunização</option>
+      
+        <option value="Integração - SIGAF/SIGTAP">Integração - SIGAF/SIGTAP</option>
+      
+        <option value="Laboratório">Laboratório</option>
+      
+        <option value="Ouvidoria">Ouvidoria</option>
+      
+        <option value="Ponto Eletrônico">Ponto Eletrônico</option>
+      
+        <option value="Regulação">Regulação</option>
+      
+        <option value="TFD">TFD</option>
+      
+        <option value="UBS - e-SUS/PEC/ESF">UBS - e-SUS/PEC/ESF</option>
+      
+        <option value="UPA/Hospital">UPA/Hospital</option>
+      
+        <option value="Vigilância Ambiental">Vigilância Ambiental</option>
+      
+        <option value="Vigilância Sanitária">Vigilância Sanitária</option>
+      
+        <option value="Zoonose">Zoonose</option>
+      
+    
+  </select>
+  
+    <svg class="icon icon-arrow-down "><use xlink:href="assets/images/icons.svg#icon-arrow-down"></use></svg>
+  
+</div>
+    
+    <span class="help-inline"></span>
+    
+    <span class="help-block"></span>
+    
+  </div>
+</div><div data-attribute-name="modulosedu" class="select form-group is-hidden is-removed hide">
+  
+  <div class="formGroup-label">
+    
+    <label for="Ticket_698383_modulosedu">
+      
+      Módulos Educação
+      <span></span>
+    </label>
+    
+    
+    
+    
+  </div>
+  
+  <div class="controls "><div class="controls controls--select">
+  <select id="Ticket_698383_modulosedu" class="form-control" name="modulosedu">
+    
+      
+        <option value="" selected="">-</option>
+      
+        <option value="Administração">Administração</option>
+      
+        <option value="Administração gestão escolar">Administração gestão escolar</option>
+      
+        <option value="Cadastro Educação - GS">Cadastro Educação - GS</option>
+      
+        <option value="Censo escolar">Censo escolar</option>
+      
+        <option value="Configurações">Configurações</option>
+      
+        <option value="Gestão de Servidores - GS">Gestão de Servidores - GS</option>
+      
+        <option value="Gestão escolar">Gestão escolar</option>
+      
+        <option value="Módulo Gerencial">Módulo Gerencial</option>
+      
+        <option value="Núcleo Comum">Núcleo Comum</option>
+      
+        <option value="Portal de informações">Portal de informações</option>
+      
+        <option value="Processo Anual Atribuição/Remoção">Processo Anual Atribuição/Remoção</option>
+      
+        <option value="Relatórios">Relatórios</option>
+      
+        <option value="Todos">Todos</option>
+      
+        <option value="Web services">Web services</option>
+      
+    
+  </select>
+  
+    <svg class="icon icon-arrow-down "><use xlink:href="assets/images/icons.svg#icon-arrow-down"></use></svg>
+  
+</div>
+    
+    <span class="help-inline"></span>
+    
+    <span class="help-block"></span>
+    
+  </div>
+</div><div data-attribute-name="caminho" class="input form-group">
+  
+  <div class="formGroup-label">
+    
+    <label for="Ticket_698383_caminho">
+      
+      Caminho
+      <span></span>
+    </label>
+    
+    
+    
+    
+  </div>
+  
+  <div class="controls "><input id="Ticket_698383_caminho" type="text" name="caminho" value="Imunização/parametrização" class="form-control " autocomplete="off" maxlength="120">
+    
+    <span class="help-inline"></span>
+    
+    <span class="help-block"></span>
+    
+  </div>
+</div><div data-attribute-name="evidencia" class="select form-group is-hidden is-removed hide">
+  
+  <div class="formGroup-label">
+    
+    <label for="Ticket_698383_evidencia">
+      
+      Evidências
+      <span></span>
+    </label>
+    
+    
+    
+    
+  </div>
+  
+  <div class="controls "><div class="controls controls--select">
+  <select id="Ticket_698383_evidencia" class="form-control" name="evidencia">
+    
+      
+        <option value="">-</option>
+      
+        <option value="Arquivo" selected="">Arquivo</option>
+      
+        <option value="Imagem/Vídeo">Imagem/Vídeo</option>
+      
+        <option value="Ping">Ping</option>
+      
+        <option value="Winmtr">Winmtr</option>
+      
+    
+  </select>
+  
+    <svg class="icon icon-arrow-down "><use xlink:href="assets/images/icons.svg#icon-arrow-down"></use></svg>
+  
+</div>
+    
+    <span class="help-inline"></span>
+    
+    <span class="help-block"></span>
+    
+  </div>
+</div><div data-attribute-name="competencia" class="input form-group is-hidden is-removed hide">
+  
+  <div class="formGroup-label">
+    
+    <label for="Ticket_698383_competencia">
+      
+      Competência (MMYYYY)
+      <span></span>
+    </label>
+    
+    
+    
+    
+  </div>
+  
+  <div class="controls "><input id="Ticket_698383_competencia" type="text" name="competencia" value="" class="form-control " autocomplete="off" maxlength="6">
+    
+    <span class="help-inline"></span>
+    
+    <span class="help-block"></span>
+    
+  </div>
+</div><div data-attribute-name="contato" class="input form-group">
+  
+  <div class="formGroup-label">
+    
+    <label for="Ticket_698383_contato">
+      
+      Contato
+      <span></span>
+    </label>
+    
+    
+    
+    
+  </div>
+  
+  <div class="controls "><input id="Ticket_698383_contato" type="text" name="contato" value="JC" class="form-control " autocomplete="off" maxlength="120">
+    
+    <span class="help-inline"></span>
+    
+    <span class="help-block"></span>
+    
+  </div>
+</div><div data-attribute-name="telcontato" class="input form-group">
+  
+  <div class="formGroup-label">
+    
+    <label for="Ticket_698383_telcontato">
+      
+      Telefone Contato
+      <span></span>
+    </label>
+    
+    
+    
+    
+  </div>
+  
+  <div class="controls "><input id="Ticket_698383_telcontato" type="tel" name="telcontato" value="36899" class="form-control " autocomplete="off" maxlength="120">
+    
+    <span class="help-inline"></span>
+    
+    <span class="help-block"></span>
+    
+  </div>
+</div><div data-attribute-name="estdev" class="select form-group is-hidden is-removed hide">
+  
+  <div class="formGroup-label">
+    
+    <label for="Ticket_698383_estdev">
+      
+      Estado desenvolvimento
+      <span></span>
+    </label>
+    
+    
+    
+    
+  </div>
+  
+  <div class="controls "><div class="controls controls--select">
+  <select id="Ticket_698383_estdev" class="form-control" name="estdev">
+    
+      
+        <option value="" selected="">-</option>
+      
+        <option value="bkpsol">Backup</option>
+      
+        <option value="Desenvolvimento">Desenvolvimento</option>
+      
+        <option value="Em andamento">Em andamento</option>
+      
+        <option value="Script">Script</option>
+      
+        <option value="Versão">Versão</option>
+      
+    
+  </select>
+  
+    <svg class="icon icon-arrow-down "><use xlink:href="assets/images/icons.svg#icon-arrow-down"></use></svg>
+  
+</div>
+    
+    <span class="help-inline"></span>
+    
+    <span class="help-block"></span>
+    
+  </div>
+</div><div data-attribute-name="priorizada" class="select form-group">
+  
+  <div class="formGroup-label">
+    
+    <label for="Ticket_698383_priorizada">
+      
+      Priorizada
+      <span></span>
+    </label>
+    
+    
+    
+    
+  </div>
+  
+  <div class="controls "><div class="controls controls--select">
+  <select id="Ticket_698383_priorizada" class="form-control" name="priorizada">
+    
+      
+        <option value="">-</option>
+      
+        <option value="0">0</option>
+      
+        <option value="1">1</option>
+      
+        <option value="2">2</option>
+      
+        <option value="3">3</option>
+      
+        <option value="4">4</option>
+      
+        <option value="5">5</option>
+      
+        <option value="6">6</option>
+      
+        <option value="7">7</option>
+      
+        <option value="8">8</option>
+      
+        <option value="9" selected="">9</option>
+      
+    
+  </select>
+  
+    <svg class="icon icon-arrow-down "><use xlink:href="assets/images/icons.svg#icon-arrow-down"></use></svg>
+  
+</div>
+    
+    <span class="help-inline"></span>
+    
+    <span class="help-block"></span>
+    
+  </div>
+</div><div data-attribute-name="cliente_critico" class="select form-group">
+  
+  <div class="formGroup-label">
+    
+    <label for="Ticket_698383_cliente_critico">
+      
+      Cliente critico
+      <span></span>
+    </label>
+    
+    
+    
+    
+  </div>
+  
+  <div class="controls "><div class="controls controls--select">
+  <select id="Ticket_698383_cliente_critico" class="form-control" name="cliente_critico">
+    
+      
+        <option value="" selected="">-</option>
+      
+        <option value="sim">Sim</option>
+      
+    
+  </select>
+  
+    <svg class="icon icon-arrow-down "><use xlink:href="assets/images/icons.svg#icon-arrow-down"></use></svg>
+  
+</div>
+    
+    <span class="help-inline"></span>
+    
+    <span class="help-block"></span>
+    
+  </div>
+</div></fieldset></fieldset>
+</form>
+<div class="js-tags tags"></div>
+<div class="js-links links"></div>
+<div class="js-linkKbAnswers link_kb_answers"></div>
+<div class="js-timeUnit time-units"></div>
+<div class="js-subscriptions"></div></div>
+</div>
+
+<div class="sidebar bottom-form-shadow flex hide" data-tab="organization">
+  <div class="sidebar-header">
+    <h2 class="sidebar-header-headline js-headline">Organização</h2>
+    <div class="sidebar-header-actions js-actions"></div>
+    <div class="tabsSidebar-close">
+      <svg class="icon icon-long-arrow-right "><use xlink:href="assets/images/icons.svg#icon-long-arrow-right"></use></svg>
+    </div>
+  </div>
+  <hr>
+  <div class="sidebar-content"><div class="sidebar-block">
+  
+    <h3 title="Nome">Vivver Sistemas</h3>
+</div></div>
+</div>
+
+<div class="tabsSidebar-tabs" style="margin-left: -17px">
+
+  <div class="tabsSidebar-tab active" data-tab="ticket">
+<svg class="icon icon-message "><use xlink:href="assets/images/icons.svg#icon-message"></use></svg>
+</div>
+
+  <div class="tabsSidebar-tab" data-tab="organization">
+<svg class="icon icon-group "><use xlink:href="assets/images/icons.svg#icon-group"></use></svg>
+</div>
+
+</div></div>
+
+  <div class="attributeBar">
+    <div class="attributeBar-inner js-attributeBar"><div class="attributeBar-avatars horizontal js-avatars hidden-xs"></div>
+
+<div class="attributeBar-draft-spacer hidden-xs"></div>
+
+<div class="attributeBar-draft hide buttonDropdown btn js-draft align-left" data-original-title="" title="">
+  <span class="attributeBar-draft--available">
+    <span class="hidden-xs">
+      <svg class="icon icon-note "><use xlink:href="assets/images/icons.svg#icon-note"></use></svg>
+      Rascunho disponível
+    </span>
+
+    <span class="visible-xs">
+      <svg class="icon icon-note "><use xlink:href="assets/images/icons.svg#icon-note"></use></svg>
+    </span>
+  </span>
+
+  <span class="attributeBar-draft--saving hide">
+    <svg class="icon icon-reload "><use xlink:href="assets/images/icons.svg#icon-reload"></use></svg>
+    Rascunhos compartilhados…
+  </span>
+</div>
+
+<div class="flex"></div>
+
+<div class="attributeBar-reset buttonDropdown btn js-reset hide"><span>Descartar alterações não salvas.</span></div>
+<div class="buttonDropdown dropdown dropdown--actions dropup">
+  <div class="btn btn--text btn--icon--last" data-toggle="dropdown">
+    <span class="js-secondaryActionButtonLabel">Ficar na aba</span> <svg class="icon icon-arrow-up "><use xlink:href="assets/images/icons.svg#icon-arrow-up"></use></svg>
+  </div>
+  <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="secondaryAction">
+    <li class="js-secondaryAction" role="menuitem">
+      <span class="js-secondaryActionLabel" data-type="closeTab">Fechar aba</span>
+      <span class="dropdown-selectedSpacer js-selectedIcon">
+        <svg class="icon icon-checkmark "><use xlink:href="assets/images/icons.svg#icon-checkmark"></use></svg>
+      </span>
+    </li><li class="js-secondaryAction" role="menuitem">
+      <span class="js-secondaryActionLabel" data-type="closeTabOnTicketClose">Fechar aba ao fechar o chamado</span>
+      <span class="dropdown-selectedSpacer js-selectedIcon">
+        <svg class="icon icon-checkmark "><use xlink:href="assets/images/icons.svg#icon-checkmark"></use></svg>
+      </span>
+    
+    </li><li class="js-secondaryAction" role="menuitem">
+      <span class="js-secondaryActionLabel" data-type="stayOnTab">Ficar na aba</span>
+      <span class="dropdown-selectedSpacer js-selectedIcon is-selected">
+        <svg class="icon icon-checkmark "><use xlink:href="assets/images/icons.svg#icon-checkmark"></use></svg>
+      </span>
+  </li></ul>
+</div>
+<form class="buttonDropdown">
+
+  <button class="btn btn--primary js-submit"><span>Atualizar</span></button>
+
+</form></div>
+  </div>
+</div></div></div>
+<div class="splash" style="display: none;">
+  <svg class="icon icon-logo"><use xlink:href="assets/images/icons.svg#icon-logo"></use></svg>
+  <div class="splash-title">Loading…</div>
+</div>
+
+
+
+
+<span style="position:absolute; top:-999px; left:0; white-space:pre;"></span><span style="position:absolute; top:-999px; left:0; white-space:pre;"></span><span style="position:absolute; top:-999px; left:0; white-space:pre;"></span><span style="position:absolute; top:-999px; left:0; white-space:pre;"></span><span style="position:absolute; top:-999px; left:0; white-space:pre;"></span><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-5" tabindex="0" style="display: none; min-width: 0px;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span><span style="position:absolute; top:-999px; left:0; white-space:pre;"></span><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-6" tabindex="0" style="display: none; min-width: 0px;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span><span style="position:absolute; top:-999px; left:0; white-space:pre;"></span><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-7" tabindex="0" style="display: none; min-width: 0px;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span><span style="position:absolute; top:-999px; left:0; white-space:pre;"></span><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-8" tabindex="0" style="display: none; min-width: 0px;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span><span style="position:absolute; top:-999px; left:0; white-space:pre;"></span><span style="position:absolute; top:-999px; left:0; white-space:pre;"></span><span style="position:absolute; top:-999px; left:0; white-space:pre;"></span><span style="position:absolute; top:-999px; left:0; white-space:pre;"></span><span style="position:absolute; top:-999px; left:0; white-space:pre;"></span><span style="position:absolute; top:-999px; left:0; white-space:pre;"></span><span style="position:absolute; top:-999px; left:0; white-space:pre;"></span><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-15" tabindex="0" style="display: none; min-width: 0px;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span><span style="position:absolute; top:-999px; left:0; white-space:pre;"></span><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-16" tabindex="0" style="display: none; min-width: 0px;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span><span style="position:absolute; top:-999px; left:0; white-space:pre;"></span><span style="position:absolute; top:-999px; left:0; white-space:pre;"></span><span style="position:absolute; top:-999px; left:0; white-space:pre;"></span><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-19" tabindex="0" style="display: none; min-width: 0px;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span><span style="position:absolute; top:-999px; left:0; white-space:pre;"></span><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-20" tabindex="0" style="display: none; min-width: 0px;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span><span style="position:absolute; top:-999px; left:0; white-space:pre;"></span><span style="position:absolute; top:-999px; left:0; white-space:pre;"></span><span style="position:absolute; top:-999px; left:0; white-space:pre;"></span><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-23" tabindex="0" style="display: none; min-width: 0px;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span><span style="position:absolute; top:-999px; left:0; white-space:pre;"></span><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-24" tabindex="0" style="display: none; min-width: 0px;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span><span style="position:absolute; top:-999px; left:0; white-space:pre;"></span><span style="position:absolute; top:-999px; left:0; white-space:pre;"></span><span style="position:absolute; top:-999px; left:0; white-space:pre;"></span><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-27" tabindex="0" style="display: none; min-width: 0px;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span><span style="position:absolute; top:-999px; left:0; white-space:pre;"></span><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-28" tabindex="0" style="display: none; min-width: 0px;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span><span style="position:absolute; top:-999px; left:0; white-space:pre;"></span><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-29" tabindex="0" style="display: none; min-width: 0px;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span><span style="position:absolute; top:-999px; left:0; white-space:pre;"></span><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-30" tabindex="0" style="display: none; min-width: 0px;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span></body></html>

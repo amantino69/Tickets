@@ -199,7 +199,7 @@ df_com_prioridade = df
 
 # Lê a planilha existente em um DataFrame
 try:
-    df_existente = pd.read_excel(r'C:\Users\Regina Casoti\Documents\Vivver\priorizadas_semana.xlsx')
+    df_existente = pd.read_excel(r'planilhas\priorizadas_semana.xlsx')
     
     
 
@@ -218,7 +218,7 @@ df_final['ticket'] = df_final['ticket'].fillna('').astype(str)
 df_final = df_final[df_final['ticket'].str.isnumeric()]
 
 # Escreve o DataFrame de volta para a planilha
-df_final.to_excel(r'C:\Users\Regina Casoti\Documents\Vivver\priorizadas_semana.xlsx', index=False)
+df_final.to_excel(r'planilhas\priorizadas_semana.xlsx', index=False)
 
 # criar uma coluna de nome dia_semana em df_final com o conteúdo da coluna 'Data_priorizado' porém no formato dia da semanda. Exemplo "segunda-feira", terça-feira" etc, sábado e domingo
 df_final['dia_semana'] = pd.to_datetime(df_final['Data_priorizado'], format='%d/%m/%Y').dt.day_name()
@@ -237,11 +237,11 @@ df_final = df_final[~df_final['dia_semana'].isin(['Saturday', 'Sunday'])]
 df_final_agrupado = df_final.groupby(['ticket', 'Data_priorizado']).first().reset_index()
 
 # Criar uma nova aba no arquivo priorizadas_semana.xlsx e escrever o DataFrame df_final_agrupado
-with pd.ExcelWriter(r'C:\Users\Regina Casoti\Documents\Vivver\priorizadas_semana.xlsx', mode='a') as writer:
+with pd.ExcelWriter(r'planilhas\priorizadas_semana.xlsx', mode='a') as writer:
     df_final_agrupado.to_excel(writer, sheet_name='agrupado', index=False)
 
 
-with pd.ExcelWriter(r'C:\Users\Regina Casoti\Documents\Vivver\priorizadas_semana.xlsx', mode='a', engine='openpyxl', if_sheet_exists='replace') as writer:
+with pd.ExcelWriter(r'planilhas\priorizadas_semana.xlsx', mode='a', engine='openpyxl', if_sheet_exists='replace') as writer:
     df_com_prioridade.to_excel(writer, sheet_name='com_prioridade', index=False)
     
 # Contar a quantidade de vezes que cada ticket aparece
@@ -252,11 +252,11 @@ contagem_tickets = contagem_tickets.reset_index()
 contagem_tickets.columns = ['ticket', 'Dias_priorizados']
 
 # Criar uma nova aba no arquivo priorizadas_semana.xlsx e escrever o DataFrame contagem_tickets
-with pd.ExcelWriter(r'C:\Users\Regina Casoti\Documents\Vivver\priorizadas_semana.xlsx', mode='a') as writer:
+with pd.ExcelWriter(r'planilhas\priorizadas_semana.xlsx', mode='a') as writer:
     contagem_tickets.to_excel(writer, sheet_name='contagem_tickets', index=False)
     
 # Ler os dados da aba 'agrupado'
-df_agrupado = pd.read_excel(r'C:\Users\Regina Casoti\Documents\Vivver\priorizadas_semana.xlsx', sheet_name='agrupado')
+df_agrupado = pd.read_excel(r'planilhas\priorizadas_semana.xlsx', sheet_name='agrupado')
 # Contar a quantidade de vezes que cada ticket aparece
 
 contagem_tickets_agrupado = df_agrupado['ticket'].value_counts()
@@ -272,16 +272,17 @@ contagem_tickets_agrupado = contagem_tickets_agrupado.assign(
 )
 
 #Criar uma aba no arquivo priorizadas_semana.xlsx e escrever o DataFrame df_com_prioridade
-with pd.ExcelWriter('priorizadas_semana.xlsx', mode='a', engine='openpyxl', if_sheet_exists='replace') as writer:
+with pd.ExcelWriter('planilhas\priorizadas_semana.xlsx', mode='a', engine='openpyxl', if_sheet_exists='replace') as writer:
+
     df_com_prioridade.to_excel(writer, sheet_name='df_com_prioridade', index=False)
 
 
 # Criar uma nova aba no arquivo priorizadas_semana.xlsx e escrever o DataFrame contagem_tickets_agrupado
-with pd.ExcelWriter(r'C:\Users\Regina Casoti\Documents\Vivver\priorizadas_semana.xlsx', mode='a', engine='openpyxl', if_sheet_exists='replace') as writer:
+with pd.ExcelWriter(r'planilhas\priorizadas_semana.xlsx', mode='a', engine='openpyxl', if_sheet_exists='replace') as writer:
     contagem_tickets_agrupado.to_excel(writer, sheet_name='contagem_tickets_agrupado', index=False)
 
 # Abrir o arquivo Excel com openpyxl
-wb = load_workbook(r'C:\Users\Regina Casoti\Documents\Vivver\priorizadas_semana.xlsx')
+wb = load_workbook(r'planilhas\priorizadas_semana.xlsx')
 
 # Selecionar a aba 'contagem_tickets_agrupado'
 sheet = wb['contagem_tickets_agrupado']
@@ -293,18 +294,18 @@ for i in range(2, 52):
     
     
 # Salvar o arquivo Excel
-wb.save(r'C:\Users\Regina Casoti\Documents\Vivver\priorizadas_semana.xlsx')
+wb.save(r'planilhas\priorizadas_semana.xlsx')
 wb.save(r'C:\workspace\Tickets\priorizadas_semana.xlsx')
 
 
 # Esse trecho abre a planilha de Tickts e insere a quantidade de dias que um determinado Ticket foi priorizado buscando essa informação na planilha Priorizados_Semana
-wb = load_workbook(r'C:\Users\Regina Casoti\Documents\Vivver\Tickets_Vivver.xlsx')
+wb = load_workbook(r'planilhas\Tickets_Vivver.xlsx')
 
 # Ler todas as abas do arquivo 'priorizadas_semana.xlsx'
-priorizadas_semana = pd.read_excel(r'C:\Users\Regina Casoti\Documents\Vivver\priorizadas_semana.xlsx', sheet_name=None)
+priorizadas_semana = pd.read_excel(r'planilhas\priorizadas_semana.xlsx', sheet_name=None)
 
 # Carregar o arquivo 'Tickets_Vivver.xlsx'
-book = load_workbook(r'C:\Users\Regina Casoti\Documents\Vivver\Tickets_Vivver.xlsx')
+book = load_workbook(r'planilhas\Tickets_Vivver.xlsx')
 
 # Remover todas as abas exceto a aba 'Todos'
 for sheet in book.sheetnames:
@@ -312,10 +313,10 @@ for sheet in book.sheetnames:
         del book[sheet]
 
 # Salvar as alterações
-book.save(r'C:\Users\Regina Casoti\Documents\Vivver\Tickets_Vivver.xlsx')
+book.save(r'planilhas\Tickets_Vivver.xlsx')
 
 # Abrir o arquivo 'Tickets_Vivver.xlsx' com o ExcelWriter
-with pd.ExcelWriter(r'C:\Users\Regina Casoti\Documents\Vivver\Tickets_Vivver.xlsx', engine='openpyxl', mode='a') as writer:
+with pd.ExcelWriter(r'planilhas\Tickets_Vivver.xlsx', engine='openpyxl', mode='a') as writer:
     # Iterar sobre todas as abas em 'priorizadas_semana'
     for sheet_name, df in priorizadas_semana.items():
         # Escrever cada aba no arquivo 'Tickets_Vivver.xlsx'
@@ -326,24 +327,24 @@ with pd.ExcelWriter(r'C:\Users\Regina Casoti\Documents\Vivver\Tickets_Vivver.xls
 
 
 
-# Inserir em wb uma aba de nome Retornados com o comteúdo da planilha r'C:\Users\Regina Casoti\Documents\Vivver\Retornados.xlsx'
-with pd.ExcelWriter(r'C:\Users\Regina Casoti\Documents\Vivver\Tickets_Vivver.xlsx', engine='openpyxl', mode='a') as writer:
-    df_Tickets_Retornados = pd.read_excel(r'C:\Users\Regina Casoti\Documents\Vivver\Tickets_Retornados.xlsx')
+# Inserir em wb uma aba de nome Retornados com o comteúdo da planilha r'planilhas\Retornados.xlsx'
+with pd.ExcelWriter(r'planilhas\Tickets_Vivver.xlsx', engine='openpyxl', mode='a') as writer:
+    df_Tickets_Retornados = pd.read_excel(r'planilhas\Tickets_Retornados.xlsx')
     df_Tickets_Retornados.to_excel(writer, sheet_name='Retornados', index=False)
 
-# Inserir em wb uma aba de nome Retornados com o comteúdo da planilha r'C:\Users\Regina Casoti\Documents\Vivver\Fechados.xlsx'
-with pd.ExcelWriter(r'C:\Users\Regina Casoti\Documents\Vivver\Tickets_Vivver.xlsx', engine='openpyxl', mode='a') as writer:
-    df_Fechados = pd.read_excel(r'C:\Users\Regina Casoti\Documents\Vivver\Fechados.xlsx')
+# Inserir em wb uma aba de nome Retornados com o comteúdo da planilha r'planilhas\Fechados.xlsx'
+with pd.ExcelWriter(r'planilhas\Tickets_Vivver.xlsx', engine='openpyxl', mode='a') as writer:
+    df_Fechados = pd.read_excel(r'planilhas\Fechados.xlsx')
     df_Fechados.to_excel(writer, sheet_name='Fechados', index=False)
     
-# Inserir em wb uma aba de nome Retornados com o comteúdo da planilha r'C:\Users\Regina Casoti\Documents\Vivver\Pendentes.xlsx'
-with pd.ExcelWriter(r'C:\Users\Regina Casoti\Documents\Vivver\Tickets_Vivver.xlsx', engine='openpyxl', mode='a') as writer:
-    df_Tickets_Pendentes = pd.read_excel(r'C:\Users\Regina Casoti\Documents\Vivver\Tickets_Pendentes.xlsx')
+# Inserir em wb uma aba de nome Retornados com o comteúdo da planilha r'planilhas\Pendentes.xlsx'
+with pd.ExcelWriter(r'planilhas\Tickets_Vivver.xlsx', engine='openpyxl', mode='a') as writer:
+    df_Tickets_Pendentes = pd.read_excel(r'planilhas\Tickets_Pendentes.xlsx')
     df_Tickets_Pendentes.to_excel(writer, sheet_name='Pendentes', index=False)
         
 
 # Carregar a planilha
-wb = load_workbook(r'C:\Users\Regina Casoti\Documents\Vivver\Tickets_Vivver.xlsx')
+wb = load_workbook(r'planilhas\Tickets_Vivver.xlsx')
 
 # Selecionar a aba "Todos"
 sheet = wb['Todos']
@@ -360,5 +361,5 @@ for i in range(8, last_row + 1):
     sheet[f'K{i}'] = f'=IFERROR(VLOOKUP(B{i},Fechados!B$1:L$4001, 3, FALSE), "")'
 
 # Salvar o arquivo Excel
-wb.save(r'C:\Users\Regina Casoti\Documents\Vivver\Tickets_Vivver.xlsx')
+wb.save(r'planilhas\Tickets_Vivver.xlsx')
 wb.save(r'C:\workspace\Tickets\Tickets_Vivver.xlsx')

@@ -144,5 +144,5 @@ df_final['mes_ano'] = df_final['Data de Fechamento'].str.extract(r'(\d{2}/\d{4})
 
 
 # Salvar o DataFrame final para um arquivo Excel com o número da iteração no nome do arquivo
-df_final.to_excel(r'C:\Users\Regina Casoti\Documents\Vivver\fechados.xlsx', index=False)
+df_final.to_excel(r'planilhas\fechados.xlsx', index=False)
 

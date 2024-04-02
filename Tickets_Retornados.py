@@ -85,5 +85,5 @@ table_html_io = StringIO(table_html)
 df = pd.read_html(table_html_io, header=0)[0]
 
 # Salvar o DataFrame final para um arquivo Excel com o número da iteração no nome do arquivo
-df.to_excel(r'C:\Users\Regina Casoti\Documents\Vivver\Tickets_Retornados.xlsx', index=False)
+df.to_excel(r'planilhas\Tickets_Retornados.xlsx', index=False)
 
