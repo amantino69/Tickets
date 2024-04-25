@@ -84,6 +84,9 @@ table_html_io = StringIO(table_html)
 # Ler o HTML da tabela para um DataFrame
 df = pd.read_html(table_html_io, header=0)[0]
 
-# Salvar o DataFrame final para um arquivo Excel com o número da iteração no nome do arquivo
-df.to_excel(r'planilhas\Tickets_Retornados.xlsx', index=False)
-
+# Verificar se df está vazio
+if not df.empty:
+    # Salvar o DataFrame final para um arquivo Excel com o número da iteração no nome do arquivo
+    df.to_excel(r'planilhas\Tickets_Retornados.xlsx', index=False)
+else:
+    print("DataFrame is empty. Not saving to Excel.")

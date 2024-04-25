@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Versões</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Controle de Versões</h1>
+        <form method="POST">
+            <div class="form-group">
+                <label for="version">Número da Versão</label>
+                <input type="text" class="form-control" id="version" name="version" placeholder="vxx.xx.xx" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Atualizar</button>
+        </form>
+        <hr>
+        <h2>Dados</h2>
+        <iframe src="/data" width="100%" height="500"></iframe>
+    </div>
+</body>
+</html>

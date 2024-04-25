@@ -354,7 +354,7 @@ last_row = sheet.max_row
 
 # Inserir a fórmula nas colunas 'FeedBack' (coluna 'M'), 'Pendentes' (coluna 'L') e 'Fechado' (coluna 'K') da linha 8 até a última linha
 for i in range(8, last_row + 1):
-    sheet[f'I{i}'] = f'=IFERROR(VLOOKUP(B{i}, com_prioridade!$A$1:$H$11, 3, FALSE), "-")'
+    sheet[f'I{i}'] = f'=IFERROR(VLOOKUP(B{i}, com_prioridade!$A$1:$H$11, 4, FALSE), "-")'
     sheet[f'J{i}'] = f'=IFERROR(VLOOKUP(B{i}, contagem_tickets_agrupado!$A$1:$B$30, 2, FALSE), "")'
     sheet[f'M{i}'] = f'=IFERROR(VLOOKUP(B{i},Retornados!B$1:H$9,3,FALSE), "")'
     sheet[f'L{i}'] = f'=IFERROR(VLOOKUP(B{i},Pendentes!B$1:G$4029, 6, FALSE), "")'
